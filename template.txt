@@ -1,0 +1,19 @@
+-Introduction (industry history-overview-characteristics-Importance) 2 paragraphs at most (Fitch)
+
+-Market updates in Egypt (News,prices,projects,(bing)
+consumption,production,exports,imports) (fitch) if not in fitch then use bing
+
+-Market updates in Globally (News,prices,projects,(bing)
+consumption,production,exports,imports) (fitch) if not in fitch then use bing
+
+-Competitor Analysis (Key players, Market share) (Fitch)
+
+-Market Research (Market research report) 
+
+-SWOT (Fitch)
+
+-Regulatory framework & Antidumping laws
+
+-Conclusion
+
+system visualization edit: make sure you use The bidi library to handle bidirectional text, and arabic_reshaper to ensure that Arabic letters are correctly connected only if you are going to add arabic text
