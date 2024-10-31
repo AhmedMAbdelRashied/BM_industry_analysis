@@ -10,9 +10,9 @@ from utils.Summarize_with_gpt import SummarizeWithGPT
 from utils.Transform_into_embeddings import TransformToEmbeddings
 from utils.Query_pdf import AzureOpenAIService
 from utils.Doc_creation import DocumentFormatter
-from banque_misr_industry_analysis.EnumIndustryName import IndustryName
+from app.EnumIndustryName import IndustryName
 from banque_misr_industry_analysis.industry_data import industry_data
-from helper_functions.helper_functions import *
+from utils.helper_functions import *
 from datetime import datetime 
 
 

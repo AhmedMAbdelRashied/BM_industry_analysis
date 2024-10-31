@@ -1,4 +1,4 @@
-Automotives:
+AUTOMOTIVES:
   Automotive Types:
     bing_query: false
     prompt: "Generate the following sections in [language]:\n    ### Automotive Types:\n\
@@ -723,337 +723,7 @@ Cotton:
       \ source.\n            - note that today's date is {date_string} anything beyond\
       \ add it as forcasting\n            "
   pdf: Raw_data/cotton/
-Electricity:
-  BM Market Research:
-    bing_query: false
-    prompt: "Generate in [language] the following sections: \n\n                ###\
-      \ The Most important contents of our bank’s market research report on the electricity\
-      \ industry July 2024\n                \n                - Generate the following\
-      \ Table as it is even leave the Hyphens:\n        | 1Q24 figures | EBITDA Margin\
-      \ | NPM | ROE | ROA | Current Ratio | Fin. Lev. | Debt /Equity | OCF (EGP Mn)\
-      \ | FCF (EGP Mn) | FCF/OCF | Revenue (EGP Mn) | % 4 y-o-y | Net income (EGP\
-      \ Mn) | % 4 y-o-y | Total assets (EGP Mn) | Total liab. (EGP Mn) |\n       \
-      \ | Electro Cable Egypt Co SAE | 31% | 17% | 65% | 19% | 1.3 | 3.5 | 183% |\
-      \ -627 | -720 | -115% | 3,072 | 100% | 535 | 164% | 10,736 | 7,704 |\n     \
-      \   | El Sewedy Electric Co SAE | 13% | 9% | 30% | 7% | 1.2 | 4.2 | 112% | -3,282\
-      \ | -5,168 | -157% | 45,249 | 36% | 4,236 | 33% | 201,164 | 153,622 |\n    \
-      \    | Average | 22% | 13% | 48% | 13% | 1.2 | 3.9 | 148% | -1,955 | -2,944\
-      \ | -136% | 24,161 | 68% | 2,386 | 99% | 105,950 | 80,663 |\n              \
-      \  - Generate insights about the table\n                - generate the table\
-      \ columns as rows and rows as columns\n                - add the source [July\
-      \ 2024 Market Research]\n\n            Instructions: \n            - note that\
-      \ today's date is {date_string} anything beyond add it as forcasting\n     \
-      \           "
-  Competitor Analysis:
-    bing_query: false
-    prompt: "Generate in [language] the following sections: \n        ### Competitve\
-      \ Analysis\n            - write about Competitive Landscape the electricity\
-      \ sector in egypt\n            - Egyptian Electric Holding Company (EEHC)\n\
-      \            - Privately Owned And Financed Power Plants\n       Instructions:\
-      \ \n            - no news needed to be added just information\n            -\
-      \ do not add conclutions\n            - note that today's date is {date_string}\
-      \ anything beyond add it as forcasting\n                        "
-  Electricity Statistics:
-    bing_query: true
-    prompt: "Generate in [language] the following sections: \n        ### Electricity\
-      \ Statistics in {current_year}\n            write about:\n                ####\
-      \ Egypt total eletricity Generated\n                #### Egypt electricity consumption\n\
-      \                #### Egypt prices changes\n                #### Egypt electricity\
-      \ segments\n                #### Egypt electricity total users\n           \
-      \     #### Egypt future electricity plans\n            - Add the sources as\
-      \ a domain name not the whole url like this [domain-name.top-level-domain].\n\
-      \            - note that today's date is {date_string} anything beyond add it\
-      \ as forcasting\n            \n        "
-    use_pdf: true
-  Introduction:
-    bing_query: false
-    prompt: "Generate in [language] the following sections: \n            \n     \
-      \       # A comprehensive analysis of the Electricity industry\n\n         \
-      \   ### Industry Overview:\n                - Introduction to Discuss the importance\
-      \ of the electricity industry to Egypt's economy\n                - highlight\
-      \ the role the electricity sector plays in powering key industries, supporting\
-      \ the country’s development goals,\n                and providing energy access\
-      \ to both urban and rural communities. Additionally, mention the impact of electricity\
-      \ on job creation, infrastructure development, and Egypt's growth as a regional\
-      \ energy hub.\n                -Subsection named Industry manufacturing stages\
-      \ discussing manufacturing stages of electricty.\n\n            - Add the sources\
-      \ as a domain name not the whole url like this [domain-name.top-level-domain].\n\
-      \            instructions: \n                - keep the introduction consice\
-      \ \n                - never output you have no results\n                - note\
-      \ that today's date is {date_string} anything beyond add it as forcasting\n\
-      \                    "
-  Key players:
-    bing_query: true
-    prompt: "Generate in [language] the following sections: \n\n\n            ## Companies\
-      \ that supports the Electricity sector in Egypt\n            - add news about\
-      \ the key players in egypt\n\n            ## Supplementary industries companies\
-      \ for Electricity sector in Egypt\n                ### talk about Lighting tools\
-      \ companies in egypt like elsewedy electric , Alshater Cables, egydir, Egypt\
-      \ cable and 10th of Ramadan Company for Electrical Industries (GAD)\n      \
-      \              - News about Lighting tools companies in egypt\n            \
-      \    ### talk about Lightening poles companies in egypt like Arab Organization\
-      \ for Industrialization, Egyptian German Lighting Poles, Al-Huda Solar Energy\n\
-      \                    - News about Lighting poles companies in egypt\n      \
-      \          ### talk about Electricity towers companies in egypt like Egyptian\
-      \ Company for Electrical Transformers, General Cable Egypt (formerly BICC Cables),\
-      \ Ankom Egypt, JST Forlead Company, Omega Company for Consultations and Mechanical\
-      \ & Electrical Contracting, Al-Shaheed Company for Metal and Plastic Processing\
-      \ and MB Industrial  \n                    - News about the electricity towers\
-      \ companies in egypt\n                    \n            - Add the sources as\
-      \ a domain name not the whole url like this [domain-name.top-level-domain].\n\
-      \            Instructions: \n            - do not add conclutions\n        \
-      \    - note that today's date is {date_string} anything beyond add it as forcasting\n\
-      \            "
-  Market updates in Egypt:
-    bing_query: true
-    prompt: "Generate in [language] the following sections: \n        \n        ###\
-      \ Market Updates and Latest News {current_year_m_1}-{current_year}\n\n     \
-      \   #### Domestic Updates and Latest News\n                - Provide the latest\
-      \ news and statistical data from reliable sources concerning the electricity\
-      \ industry, focusing on:\n                    - Egypt: Highlight recent developments,\
-      \ trends, statistical insights, prices changes, projects, consumption, producion,\
-      \ electricity exports, electricity imports that impacting the electricity sector\
-      \ in egypt.\n                        - Egypt Power & Renewables Projects Database,\
-      \ Egypt Top 10 Power\n                    - Regional Overviews\n           \
-      \     - Add news about the major players in the electricity sector in Egypt\n\
-      \n                - Add the sources as a domain name not the whole url like\
-      \ this [domain-name.top-level-domain].\n        Instructions: \n           \
-      \ - do not add conclutions\n            - note that today's date is {date_string}\
-      \ anything beyond add it as forcasting\n            \n                    "
-  Market updates in Globally:
-    bing_query: true
-    prompt: "Generate in [language] the following sections: \n\n        #### Global\
-      \ Updates and Latest News\n        - Global Trends: Highlight recent developments,\
-      \ trends, statistical insights, prices changes, projects, consumption, producion\
-      \ that impacting the electricity sector Globaly.\n                    \n   \
-      \                 \n            - Add the sources as a domain name not the whole\
-      \ url like this [domain-name.top-level-domain].\n       \n        Instructions:\
-      \ \n            - do not add conclutions\n            - note that today's date\
-      \ is {date_string} anything beyond add it as forcasting\n\n        "
-  Regulatory framework & Antidumping laws:
-    bing_query: true
-    prompt: "Generate in [language] the following sections: \n        ### Regulatory\
-      \ framework & Antidumping laws\n            - Write the most important regulations\
-      \ in egypt regarding the electricity sector\n        Instructions: \n      \
-      \      - do not add conclutions\n            \n            - note that today's\
-      \ date is {date_string} anything beyond add it as forcasting\n             \
-      \       "
-  SWOT Analysis and Conclution:
-    bing_query: false
-    prompt: "\n        Generate in [language] the following sections: \n\n       \
-      \         ### SWOT Analysis:\n                - Conduct a SWOT analysis table\
-      \ of the electricity sector, identifying strengths, weaknesses, opportunities,\
-      \ and threats.\n                - Add the sources as a domain name not the whole\
-      \ url like this [domain-name.top-level-domain].\n\n                ### Conclusion:\n\
-      \                - Provide a comprehensive conclusion on industry trends (growing\
-      \ or not) for credit decision reviewers with showing some statistics and make\
-      \ it a bit longer.\n            Instructions: \n            - note that today's\
-      \ date is {date_string} anything beyond add it as forcasting\n            \n\
-      \                        "
-  pdf: Raw_data/electricity/
-Fertilizers:
-  Anti dumping laws and Regulatory framework:
-    bing_query: true
-    prompt: "\n        Generate the following sections in [language] then format them\
-      \ according to the required structure in the [Instructions]:\n\n        ###\
-      \ Anti dumping laws and Regulatory framework:\n        -Generate antidumping\
-      \ laws for fertilizers in egypt if found only!.\n        -Genereate the regulatory\
-      \ framework for fertilizers in egypt.\n        [Instructions]:\n           \
-      \ -just 2 paragraphs one per each\n            -Don't include any conclusions.\n\
-      \            -Include the citation source.\n            - note that today's\
-      \ date is {date_string} anything beyond add it as forcasting\n        "
-  BM market research:
-    bing_query: false
-    prompt: "\n            Generate the following sections in [language] then format\
-      \ them according to the required structure in the [Instructions]:\n\n      \
-      \      ### Market research:\n            -Generate the market research from\
-      \ the given data tables in [Data_1] where both of them are tables.\n       \
-      \     ------------------------------------------------------------\n       \
-      \ [Data_1]\n        1Q24 figures\tFinancial Performance\tFinancial Position\t\
-      Cash Flow Position\tKey P&L Figures\tKey B/S Figures\t\t\t\t\t\t\t\t\t\t\t\n\
-      \        EBITDA Margin\tNPM\tROE\tROA\tCurrent Ratio\tFin. Lev.\tDebt /Equity\t\
-      OCF (EGP Mn)\tFCF (EGP Mn)\tFCF/OCF\tRevenue (EGP Mn)\t% 4 y-o-y\tNet income\
-      \ (EGP Mn)\t% 4 y-o-y\tTotal assets (EGP Mn)\tTotal liab. (EGP Mn)\t\n     \
-      \   Abu Qir Fertilizers\t37%\t150%\t46%\t37%\t5.5\t1.3\t-\t2,744\t2,625\t95%\t\
-      5,425\t-11%\t8,122\t46%\t42,736\t9,391\n        Egyptian Financial & Industrial\
-      \ SAE\t27%\t24%\t19%\t6%\t1.2\t3\t103%\t-392\t-512\t-\t1,785\t81%\t428\t93%\t\
-      6,558\t4,368\n        Misr Fertilizers Production Co SAE\t44%\t159%\t22%\t16%\t\
-      2.1\t1.3\t49%\t1,816\t1,709\t94%\t4,796\t220%\t7,648\t94%\t63,272\t17,507\n\
-      \        Egyptian Chemical Industries KIMA\t30%\t2%\t1%\t0.40%\t1.8\t3.1\t160%\t\
-      2,293\t620\t27%\t4,612\t98%\t102\t-45%\t25,852\t17,469\n        Samad Misr SAE\t\
-      -4%\t17%\t6%\t5%\t5.4\t1.1\t-\t5\t5\t100%\t40\t-25%\t7\t-77%\t123\t11\n    \
-      \    Mean Average\t30%\t24%\t19%\t6%\t2.1\t1.3\t103%\t1,293\t889\t94%\t3,332\t\
-      81%\t3,261\t46%\t27,708\t9,749\n\n\n\n\n            [Instructions]:\n      \
-      \      your role is a risk manager who works in credit approvals in banking\
-      \ sector , do the following:\n                -The section should be named \"\
-      Our Bank's Market Research Department Report on the Industry July {current_year}\"\
-      .\n                -Generate the table given in [Data_1] in the response.\n\
-      \                -Make Names for the [Data_1] table from what you understand.\n\
-      \                -Comment on each table separtly in [language] make it detailed\
-      \ .\n                -Make sure the data is relevant to our context feltilizers\
-      \ in Egypt.\n                -Don't include any conclusions.\n             \
-      \   -Include the citation source here it's market research by Banque misr team.\n\
-      \                - note that today's date is {date_string} anything beyond add\
-      \ it as forcasting\n                - generate the table columns as rows and\
-      \ rows as columns\n            "
-  Competitve Analysis:
-    bing_query: true
-    prompt: "\n\n           Generate the following section in [language] and follow\
-      \ up the [Instructions] strictly:\n\n            ### key market players in Egypt:\n\
-      \            - Key market players in Fertilizers industry in Egypt\n       \
-      \     [Instructions]:\n            -include dates , statistics.\n          \
-      \  -Geographical area of operation per each company.\n            -Numbers is\
-      \ strictly required per each type.\n            -Include citations,numbers and\
-      \ statistics for each requirement.\n            -Include refrences for every\
-      \ information you write.\n            -avoid contradictions in statistics and\
-      \ numbers.\n            -Make them in a table.\n            -Don't include full\
-      \ links make it citation without hyperlinks\n            - note that today's\
-      \ date is {date_string} anything beyond add it as forcasting\n            \n\
-      \n            "
-  Conclusion:
-    bing_query: false
-    prompt: "\n                Generate the following sections in [language] then\
-      \ format them according to the required structure in the [Instructions]:\n\n\
-      \                ### Conclusion:\n                -Highligh the main highlights\
-      \ concerning the fertilizers Market in Egypt and worldwide\n               \
-      \ -Include a constructive forecast regarding the fertilizers after the current\
-      \ year based on the information you knew earlier from the previous prompts.\n\
-      \                -Illustrate your forecasts reasons\n\n                [Instructions]:\n\
-      \                    -1 paragraph.\n                    -Detailed and focusing\
-      \ on the main highlights.\n                    -Include latest projects mentioned\
-      \ earlier or explorations.\n                    -Include the Oppourtuinties\
-      \ for it.\n                    - note that today's date is {date_string} anything\
-      \ beyond add it as forcasting\n                "
-  Introduction:
-    bing_query: false
-    prompt: "\n\n            Generate the following section in [language] and follow\
-      \ up the [Instructions] strictly:\n\n            # A comprehensive analysis\
-      \ of the fertilizers industry\n\n            ### The Introduction and Importance\
-      \ fertilizers industry\n            - Introduction about the fertilizers industry\
-      \ in Egypt and worldwide.\n            - Importance of the fertilizer industry\
-      \ in Egypt and worldwide\n            [Instructions]\n            -Generate\
-      \ a paragraph of 6 lines and introduce the main points as instructed earlier.\n\
-      \            -if you are going to include dates make it most updated only.\n\
-      \            -include dates , statistics , history.\n            -Include citations,numbers\
-      \ and statistics for each requirement.\n            -Include refrences for every\
-      \ information you write.\n            - note that today's date is {date_string}\
-      \ anything beyond add it as forcasting\n            \n\n            "
-  Introduction 2:
-    bing_query: true
-    prompt: "\n\n           Generate the following section in [language] and follow\
-      \ up the [Instructions] strictly:\n\n            ### Industry overview including\
-      \ (Fertilizers types,Production stages)\n            - Fertilizers types overview\n\
-      \            - Production stage of each type\n            [Instructions]\n \
-      \           -Generate a paragraph of 6 lines and introduce the main points as\
-      \ instructed earlier.\n            -include dates , statistics , history.\n\
-      \            -Include citations,numbers and statistics for each requirement.\n\
-      \            -Make a subsection for each fertilizer type and it's production\
-      \ stages.\n            -Include refrences for every information you write.\n\
-      \            -Don't include full links make it citation without hyperlinks.\n\
-      \            - note that today's date is {date_string} anything beyond add it\
-      \ as forcasting\n            \n\n            "
-  Market Statistics:
-    bing_query: true
-    prompt: "\n\n           Generate the following section in [language] and follow\
-      \ up the [Instructions] strictly:\n\n            ### statistics about potasium\
-      \ chloride and potasium sulphate\n            - Statistics about potasium chrolide\n\
-      \            - Statistics about potasium sulphate\n            [Instructions]\n\
-      \            -Generate a paragraph a short paragraph for both potasium chloride\
-      \ and potasium sulphate.\n            -include dates , statistics , history.\n\
-      \            -Include citations,numbers and statistics for each requirement.\n\
-      \            -Make a subsection for each fertilizer type and it's production\
-      \ stages.\n            -Include refrences for every information you write.\n\
-      \            -Don't include full links make it citation without hyperlinks.\n\
-      \            -Make it in a single table, no multiple tables are allowed.\n \
-      \           -Handle the table properly to avoid any errors by making the table\
-      \ cells matching the sizes.\n            - note that today's date is {date_string}\
-      \ anything beyond add it as forcasting\n            \n\n            "
-  Market Updates Globally:
-    bing_query: true
-    prompt: "\n\n           Generate the following section in [language] and follow\
-      \ up the [Instructions] strictly:\n\n            ### Latest worldwide market\
-      \ supply and demand in countries that's linked to Egypt {current_year}:\n  \
-      \          - Supply and demand for countries that are linked to Egypt in the\
-      \ field of Fertilizers co-operation {current_year}\n            [Instructions]:\n\
-      \            -include dates , statistics.\n            -Numbers is strictly\
-      \ required per each type.\n            -Include citations,numbers and statistics\
-      \ for each requirement.\n            -Include refrences for every information\
-      \ you write.\n            -Make them in a table.\n            -Don't include\
-      \ full links make it citation without hyperlinks\n            \n           \
-      \ - note that today's date is {date_string} anything beyond add it as forcasting\n\
-      \n            "
-  Market Updates Globally 2:
-    bing_query: true
-    prompt: "\n\n              Generate the following section in [language] and follow\
-      \ up the [Instructions] strictly:\n\n                ### Latest Market Updates\
-      \ Worldwide:\n                - latest news about fertilizers prices in the\
-      \ world {current_year}\n                - world Market Trends in Fertilizers\
-      \ industry {current_year}\n                - world Government projects and support\
-      \ to Fertilizers industry in world {current_year}\n                [Instructions]\n\
-      \                -Generate a latest news and Trends subsection in world.\n \
-      \               -Generate Governmental projects subsection in world\n      \
-      \          -include dates , statistics.\n                -Include citations,numbers\
-      \ and statistics for each requirement.\n                -Include refrences for\
-      \ every information you write.\n                -Don't include full links make\
-      \ it citation without hyperlinks.\n                - note that today's date\
-      \ is {date_string} anything beyond add it as forcasting\n                \n\n\
-      \                "
-  Market Updates In Egypt:
-    bing_query: true
-    prompt: "\n\n            Generate the following section in [language] and follow\
-      \ up the [Instructions] strictly:\n\n            ### Latest Market Updates in\
-      \ Egypt:\n            - latest news about fertilizers prices in Egypt {current_year}\n\
-      \            - Egyptian Market Trends in Fertilizers industry {current_year}\n\
-      \            - Egyptian Government projects and support to Fertilizers industry\
-      \ in Egypt {current_year}\n            [Instructions]\n            -Generate\
-      \ a latest news and Trends subsection in Egypt.\n            -Generate Governmental\
-      \ projects subsection in Egypt\n            -include dates , statistics.\n \
-      \           -Include citations,numbers and statistics for each requirement.\n\
-      \            -Include refrences for every information you write.\n         \
-      \   -Don't include full links make it citation without hyperlinks\n        \
-      \    - note that today's date is {date_string} anything beyond add it as forcasting\n\
-      \            \n\n            "
-  Market Updates in Egypt:
-    bing_query: true
-    prompt: "\n\n                Generate the following section in [language] and\
-      \ follow up the [Instructions] strictly:\n\n                ### Latest Market\
-      \ Production/Exports/Consumption in Egypt {current_year}:\n                -\
-      \ Egyptian production in fertilizers {current_year}\n                - Egyptian\
-      \ Exports in fertilizers {current_year}\n                - Egyptian Consumptions\
-      \ in fertilizers {current_year}\n                [Instructions]\n          \
-      \      -Generate a table for each type of fertlizer containing the 3 diagonals\
-      \ required which are Production/Exports/Consumption .\n                -include\
-      \ dates , statistics.\n                -Numbers is strictly required per each\
-      \ type.\n                -Include citations,numbers and statistics for each\
-      \ requirement.\n                -Include refrences for every information you\
-      \ write.\n                -For the imports subsection focous on mentioning that\
-      \ Egypt has a self suffiecency in fertilizers indusrty and for production/exports/consumption\
-      \ mention them in a table.\n                -Don't include full links make it\
-      \ citation without hyperlinks.\n                -if there's a type of fertilizers\
-      \ that doesn't have statistics then don't mention it.\n                -الواردات\
-      \ هي هي الاكتفاء الذاتي, imports is the same as self sufficiency.\n        \
-      \        - note that today's date is {date_string} anything beyond add it as\
-      \ forcasting\n                \n\n                "
-  SWOT:
-    bing_query: false
-    prompt: "\n            Generate the following sections in [language] then format\
-      \ them according to the required structure in the [Instructions]:\n\n      \
-      \      ### Strengths weakness oppourtuintes threas analysis:\n            -Generate\
-      \ and Extract Strengths , weakness , opportuinties and threats concerning the\
-      \ Fertilizers Market in Egypt from the Given Data.\n            -Make sure there's\
-      \ no contradictions.\n            -Data should be related to Fertilizers industry\
-      \ in Egypt.\n\n            [Instructions]:\n                -Generate the response\
-      \ as a matrix table.\n                -Illustrate the reasons for the swot analysis\
-      \ from the data in context.\n                -Make sure the data is relevant\
-      \ to our context Fertilizers industry in Egypt.\n                -Data should\
-      \ be related to Fertilizers industry in Egypt so the focus here must be on fertilizers\
-      \ industry in Egypt only.\n                -Be specific , detailed oriented\
-      \ and include details as much as possible.\n                -Don't include any\
-      \ conclusions.\n                -Include the citation source.\n            \
-      \    - note that today's date is {date_string} anything beyond add it as forcasting\n\
-      \            "
-  pdf: Raw_data/fertilizers/
-Food & Beverage (Dairy & Cheese):
+Dairy_Cheese:
   Bank internal Market Research:
     bing_query: false
     prompt: "\n                    Generate the following sections in [language] language\
@@ -1405,386 +1075,337 @@ Food & Beverage (Dairy & Cheese):
       \ graphs or charts and present them in table format, ensuring the numbers are\
       \ clearly represented.  \n                - note that today's date is {date_string}\
       \ anything beyond add it as forcasting\n        "
-Food & Beverage (Meat):
-  'Analyze the meat and fish industry in Egypt ':
-    bing_query: true
-    prompt: " Generate the following sections in [language]\n        Analyze the meat\
-      \ and fish industry in Egypt by focusing on the following aspects:\n       \
-      \ \n        ### Consumption:\n        - What are the current trends in meat\
-      \ and fish consumption in Egypt?\n        - How do factors like population growth,\
-      \ changing dietary habits, and economic conditions influence demand for meat\
-      \ and fish?\n        \n        ### Production:\n        - What is the current\
-      \ state of meat and fish production in Egypt?\n        - Identify major players\
-      \ in the market and their contributions to the national supply of meat and fish.\n\
-      \        - Discuss any government initiatives or regulations that affect production,\
-      \ such as subsidies, trade policies, or livestock development programs.\n  \
-      \      \n        ### Exports:\n        - Examine the role of the meat and fish\
-      \ sectors in Egypt's export economy.\n        - What types of meat products\
-      \ and fish are being exported, and to which countries?\n        - Assess the\
-      \ impact of foreign investment in Egypt’s meat and fish production and export\
-      \ sectors.\n        \n        ### Imports:\n        - Identify key imports related\
-      \ to the meat and fish industry, such as animal feed, livestock, or advanced\
-      \ processing technologies.\n        - How do import trends affect the local\
-      \ market for meat and fish in Egypt?\n        - Discuss any challenges or barriers\
-      \ related to imports in the industry, such as tariffs or supply chain disruptions.\n\
-      \        \n        Instructions:\n            - Add the sources' names, not\
-      \ links.\n            - The answer should be in [language].\n            - The\
-      \ response should be related to the meat and fish market.\n            - Don't\
-      \ include in your response any information related to chicken, frozen meat,\
-      \ frozen fish, or chicken companies.\n            - Generate a table that represents\
-      \ this part if applicable.\n            - Include numbers that represent the\
-      \ current situation.\n            - The response should be updated after {current_year_m_1}.\n\
-      \            - No need for data before {current_year_m_1}.\n            - Don't\
-      \ include a conclusion in your response.\n            - If you don't have enough\
-      \ info about any item, don't include it in the table.\n            - note that\
-      \ today's date is {date_string} anything beyond add it as forcasting\n     \
-      \               "
-  Competitive Landscape Analysis:
-    bing_query: true
-    prompt: " Generate the following sections in [language]\n        \n        ###\
-      \ Competitive Landscape Analysis: Top Meat, Frozen Meat, and Frozen Fish Companies\
-      \ in Egypt\n        \n        Instructions:\n        1. Title: \"تحليل التنافسية\
-      \ للشركات الرائدة في قطاع اللحوم واللحوم المجمدة في مصر\".\n        2. Table\
-      \ Requirements:\n            - Compare major companies operating in the meat,\
-      \ frozen meat, and frozen fish sectors.\n            these companies should\
-      \ be related to meat dont inlude conpanies like إسماعيلية مصر للدواجن , كوكاكولا\
-      \ مصر\n        \n        \n        3. Table Format: The table should be large\
-      \ and clear, suitable for inclusion in a formal document.\n        4. Sources:\
-      \ Cite the data sources by name without including direct links.\n        5.\
-      \ Language: The table and instructions should be in **[language]**.\n      \
-      \  6. Timeframe: Focus on data post-{current_year_m_1} or as recent as possible.\
-      \ Avoid data from before {current_year_m_1}.\n        7-the response should\
-      \ be related  frozen meat  ,  meat  market and frozen fish Do not include anything\
-      \ else in your response like (chicken and frozen chicken)\n        8-don't include\
-      \ in your response any information related to chicken , frozen chicken and chicken\
-      \ companies\n        9-don't add conclusion or introduction in your response\n\
-      \        - note that today's date is {date_string} anything beyond add it as\
-      \ forcasting\n            "
-  Conclusion:
+Electricity:
+  BM Market Research:
     bing_query: false
-    prompt: "\n        \n        Generate the following sections in [language], then\
-      \ format them according to the required structure in the [Instructions]:\n \
-      \       \n        Conclusion:\n        Highlight the key points concerning the\
-      \   meat  and frozen meat  market in Egypt and worldwide.\n        Include a\
-      \ constructive forecast for the meat , frozen meat and frozen fish   market\
-      \  after {current_year} based on the information discussed earlier in the previous\
-      \ prompts.\n        Illustrate the reasons behind your forecast.\n        [Instructions]:\n\
-      \            -one paragraph.\n            -Detailed and focused on the main\
-      \ highlights.\n            -Include the latest projects mentioned earlier or\
-      \ any explorations.\n            -Include the opportunities available in the\
-      \ frozen meat  ,  meat  market and frozen fish .\n            -don’t include\
-      \ any recommendations in this section\n            -the response should be related\
-      \  frozen meat  ,  meat  market and frozen fish Do not include anything else\
-      \ in your response like (chicken and frozen chicken)\n            -don't include\
-      \ in your response any information related to chicken , frozen chicken and chicken\
-      \ companies\n            - note that today's date is {date_string} anything\
-      \ beyond add it as forcasting\n        \n                    "
+    prompt: "Generate in [language] the following sections: \n\n                ###\
+      \ The Most important contents of our bank’s market research report on the electricity\
+      \ industry July 2024\n                \n                - Generate the following\
+      \ Table as it is even leave the Hyphens:\n        | 1Q24 figures | EBITDA Margin\
+      \ | NPM | ROE | ROA | Current Ratio | Fin. Lev. | Debt /Equity | OCF (EGP Mn)\
+      \ | FCF (EGP Mn) | FCF/OCF | Revenue (EGP Mn) | % 4 y-o-y | Net income (EGP\
+      \ Mn) | % 4 y-o-y | Total assets (EGP Mn) | Total liab. (EGP Mn) |\n       \
+      \ | Electro Cable Egypt Co SAE | 31% | 17% | 65% | 19% | 1.3 | 3.5 | 183% |\
+      \ -627 | -720 | -115% | 3,072 | 100% | 535 | 164% | 10,736 | 7,704 |\n     \
+      \   | El Sewedy Electric Co SAE | 13% | 9% | 30% | 7% | 1.2 | 4.2 | 112% | -3,282\
+      \ | -5,168 | -157% | 45,249 | 36% | 4,236 | 33% | 201,164 | 153,622 |\n    \
+      \    | Average | 22% | 13% | 48% | 13% | 1.2 | 3.9 | 148% | -1,955 | -2,944\
+      \ | -136% | 24,161 | 68% | 2,386 | 99% | 105,950 | 80,663 |\n              \
+      \  - Generate insights about the table\n                - generate the table\
+      \ columns as rows and rows as columns\n                - add the source [July\
+      \ 2024 Market Research]\n\n            Instructions: \n            - note that\
+      \ today's date is {date_string} anything beyond add it as forcasting\n     \
+      \           "
+  Competitor Analysis:
+    bing_query: false
+    prompt: "Generate in [language] the following sections: \n        ### Competitve\
+      \ Analysis\n            - write about Competitive Landscape the electricity\
+      \ sector in egypt\n            - Egyptian Electric Holding Company (EEHC)\n\
+      \            - Privately Owned And Financed Power Plants\n       Instructions:\
+      \ \n            - no news needed to be added just information\n            -\
+      \ do not add conclutions\n            - note that today's date is {date_string}\
+      \ anything beyond add it as forcasting\n                        "
+  Electricity Statistics:
+    bing_query: true
+    prompt: "Generate in [language] the following sections: \n        ### Electricity\
+      \ Statistics in {current_year}\n            write about:\n                ####\
+      \ Egypt total eletricity Generated\n                #### Egypt electricity consumption\n\
+      \                #### Egypt prices changes\n                #### Egypt electricity\
+      \ segments\n                #### Egypt electricity total users\n           \
+      \     #### Egypt future electricity plans\n            - Add the sources as\
+      \ a domain name not the whole url like this [domain-name.top-level-domain].\n\
+      \            - note that today's date is {date_string} anything beyond add it\
+      \ as forcasting\n            \n        "
+    use_pdf: true
   Introduction:
     bing_query: false
-    prompt: "\n \n        Generate the following sections in [language]:\n       \
-      \ # A comprehensive analysis of the Meat industry\n\n        ### Industry Overview:\n\
-      \        \n        \n        ### Meat ,  Frozen Meat  and frozen fish Industry\
-      \ History & Market Statistics {current_year_m_14} - {current_year}:\n      \
-      \  \n        \n        ### Meat ,   Frozen Meat  frozen and  fish Industry Performance\
-      \ {current_year_m_2} - {current_year}:\n        \n        \n        ### Importance\
-      \ of the Meat , Frozen Meat and frozen fish Industry in Egypt:\n        - Discuss\
-      \ the **importance of the meat and frozen meat industry** to Egypt's economy,\
-      \ highlighting its role in providing food security, employment opportunities,\
-      \ and its contributions to GDP.\n        - Include data and sources for all\
-      \ information provided.\n        - Your output should be **related to the meat\
-      \ and frozen fish  industry in Egypt only** (exclude poultry).\n        - Do\
-      \ **not** add any recommendations in your response.\n        -provide numbers\
-      \ that represent the current situation\n        - note that today's date is\
-      \ {date_string} anything beyond add it as forcasting\n                    "
-  Market Updates and Latest News Globally:
-    bing_query: true
-    prompt: "\n         Generate the following sections in [language]\n        \n\
-      \        ### Market Updates and Latest News Globally ({current_year}) for meat\
-      \ frozen  meat , frozen fish  industry\n            - Provide the latest news\
-      \ and statistical data from reliable sources concerning the **meat and frozen\
-      \ meat industry**, focusing on:\n            - **Global Market**: Highlight\
-      \ recent developments, trends, and statistical insights impacting the global\
-      \ **meat and frozen meat sector**, including production, consumption, imports,\
-      \ exports, and key market drivers.\n            - Add the sources' names, not\
-      \ links.\n            - The response should include information after {current_year_m_1}.\n\
-      \            - Do **not** add a conclusion.\n            - Ensure the output\
-      \ is related to **meat , frozen meat and frozen fish  only** (exclude poultry).\n\
-      \            - the response should be related  frozen meat  ,  meat  market\
-      \ and frozen fish Do not include anything else in your response like (chicken\
-      \ and frozen chicken)\n            - don't include in your response any information\
-      \ related to chicken , frozen chicken and chicken companies\n            -the\
-      \ response should be updated after {current_year_m_1}\n            - note that\
-      \ today's date is {date_string} anything beyond add it as forcasting\n     \
-      \   \n                    "
-  'Market updates in egypt ':
-    bing_query: true
-    prompt: "\n             Generate the following sections in [language] in detail:\n\
-      \        \n        ### Market Updates and Latest News in Egypt ({current_year})\
-      \ related to the Meat, Frozen Meat, and Frozen Fish Industry:\n        \n  \
-      \          - Provide detailed updates and statistical data from reliable sources\
-      \ about the meat, frozen meat, and frozen fish industry in Egypt, focusing on:\n\
-      \                - **Recent Developments**: Key news regarding production capacity,\
-      \ supply chain disruptions, government interventions, and market shifts impacting\
-      \ the meat, frozen meat, and frozen fish sectors.\n                - **Impact\
-      \ of Refugees**: Assess the effects of the increasing refugee population in\
-      \ Egypt on the market dynamics, particularly how demand, consumption patterns,\
-      \ and available supply of meat, frozen meat, and frozen fish are being affected.\n\
-      \                - **Current Prices**: Present up-to-date pricing for various\
-      \ types of meat (beef, lamb, frozen beef, etc.) and frozen fish as of {current_year}.\
-      \ Highlight any regional or seasonal price fluctuations, and compare them to\
-      \ the past year.\n                - **Consumption, Production, Exports, and\
-      \ Imports**: Include recent statistics and trends concerning the consumption,\
-      \ production volumes, and trade of meat, frozen meat, and frozen fish, identifying\
-      \ key shifts in import/export balances.\n                - **Environmental Impact**:\
-      \ Examine any recent reports or data on the environmental impacts of the meat\
-      \ and frozen fish industries in Egypt, including issues like land use, water\
-      \ consumption, and waste management.\n                - **Technological Advancements**:\
-      \ Discuss any new technological developments in meat production, frozen meat\
-      \ processing, and frozen fish processing, such as the use of automation, AI,\
-      \ or sustainable farming practices.\n                - **Labor Market and Employment**:\
-      \ Provide insights into the labor force within the meat, frozen meat, and frozen\
-      \ fish industries, noting any challenges such as labor shortages, worker conditions,\
-      \ or government policies affecting employment.\n                - **Supply Chain\
-      \ Challenges**: Outline any current disruptions or challenges in the supply\
-      \ chain, including logistical issues, feed shortages, or rising transportation\
-      \ costs for meat, frozen meat, and frozen fish.\n        \n            - Ensure\
-      \ the information is sourced from credible and reliable sources, and **include\
-      \ the source names** (not links).\n            - **Do not include a conclusion**\
-      \ or personal commentary.\n            - Ensure the response reflects today’s\
-      \ date: {date_string}.\n            - The output should be related to meat,\
-      \ frozen meat, and frozen fish (no poultry).\n            - The response should\
-      \ be in [language]..\n            - note that today's date is {date_string}\
-      \ anything beyond add it as forcasting\n                    "
-  SWOT Analysis:
-    bing_query: false
-    prompt: "\n         Generate the following sections in [language], then format\
-      \ them according to the required structure in the [Instructions]:\n        ###\
-      \ (SWOT) Analysis\n            Strengths, Weaknesses, Opportunities, and Threats\
-      \ (SWOT) Analysis for meat  , frozen meat  and  frozen fish in Egypt:\n    \
-      \        Generate and extract the strengths, weaknesses, opportunities, and\
-      \ threats concerning the meat and frozen meat market in Egypt from the given\
-      \ data.\n            Ensure that there are no contradictions.\n        \n  \
-      \      [Instructions]:\n        - Generate the response as a table.\n      \
-      \  - Add a header for this section titled 'SWOT'.\n        - Include population\
-      \ increase in this table.\n        - Illustrate the reasons for the SWOT analysis\
-      \ from the data in context.\n        - Make sure the data is relevant to our\
-      \ context in the meat and frozen meat industry in Egypt.\n        - Be specific,\
-      \ detail-oriented, and include as many details as possible.\n        - Include\
-      \ the citation source.\n        - Do not include any conclusions.\n        -\
-      \ the response should be [language]\n        -the response should be related\
-      \  frozen meat  ,  meat  market and frozen fish Do not include anything else\
-      \ in your response like (chicken and frozen chicken)\n        -don't include\
-      \ in your response any information related to chicken , frozen chicken and chicken\
-      \ companies\n        -don't add notes after your response\n        - note that\
-      \ today's date is {date_string} anything beyond add it as forcasting\n     \
-      \          "
-  pdf: Raw_data/meat
-Food & Beverage (Oil Refining & Extraction):
-  Introduction & Importance:
-    bing_query: false
-    prompt: "\n        Generate the following section in [language]\n\n        # A\
-      \ comprehensive analysis of the (Oil Refining & Extraction)\n\n        ### Introduction\
-      \ and Importance\n\n            1. General Overview of the Oil Industry:\n \
-      \             Fats, which are widespread in both the plant and animal worlds,\
-      \ are a major source of concentrated energy, providing double the energy produced\
-      \ by equal amounts of proteins or carbohydrates. Thus, fats are a crucial dietary\
-      \ source for humans.\n              Many important industries rely on fats,\
-      \ such as oil extraction and refining from plant and animal sources, hydrogenated\
-      \ oil production for margarine and cooking oils, as well as diverse industries\
-      \ such as soap manufacturing, varnishes, glycerides, and the separation of glycerin\
-      \ and fatty acids for other industrial uses.\n              Due to the significance\
-      \ of fats, they hold a prominent place in the economies of major countries,\
-      \ which focus on the development of their plant and animal sources, whether\
-      \ terrestrial or marine, while enhancing extraction and manufacturing processes\
-      \ to high-quality standards.\n              The Arab world is rich in important\
-      \ natural sources of oils and fats, such as olives, cotton seeds, sesame, sunflower,\
-      \ and soybeans. The vegetable oil industry is one of the most significant and\
-      \ ancient industries in most countries, having been known to the Mediterranean\
-      \ civilizations, particularly in the extraction of olive oil.\n\n          \
-      \    Two types of fats exist in nature:\n\n              Animal fats:\n    \
-      \          These are derived from animal origins and can be greasy, fatty, or\
-      \ oily, depending on their melting points. Greases are solid fats at room temperature,\
-      \ while oils are liquid at the same temperature, and fats fall between the two.\n\
-      \              Beef and sheep fats are commercially viable sources, and significant\
-      \ amounts of oils can be extracted from marine fish and whales, which were historically\
-      \ hunted for their oils alone but are now utilized more comprehensively.\n \
-      \             Statistics indicate a rising production of animal fats, especially\
-      \ in recent years, including butter, animal fats, and fish and whale oils.\n\
-      \n              Vegetable fats:\n              There are over 100 types of raw\
-      \ plant materials used for oil production today, with annual plants being the\
-      \ primary source. Examples include sunflower, corn, sesame, cottonseed, soybeans,\
-      \ and peanuts. Perennial trees like coconut, palm, and olive trees serve as\
-      \ secondary sources.\n              Notably, plants with oilseeds, such as corn,\
-      \ rice, and cotton, yield oil as a secondary product.\n              The following\
-      \ table shows the approximate oil content in some seeds and oil-bearing fruits:\n\
-      \n              Raw Material\t%\tRaw Material\t%\n              Castor seeds\t\
-      40-50\tTobacco seed\t30-43\n              Cottonseed\t15-20\tSafflower seed\t\
-      25-37\n              Flaxseed\t35-40\tPalm fruit\t20-30\n              Hempseed\t\
-      30-35\tPalm kernel\t30-60\n              Rape seed\t22-49\tOlive fruit\t15-30\n\
-      \              Soybean\t18-20\tOlive stone\t10-15\n              Sesame seed\t\
-      40-50\tCoconut fruit\t40-65\n              Sunflower seeds\t25-45\tCorn seeds\t\
-      17-20\n\n              Vegetable oils are present in all parts of oil-bearing\
-      \ plants, including the stem, leaves, roots, flowers, and fruits, although fruits\
-      \ contain the highest percentage of fats. It is believed that the Chinese were\
-      \ the first to use oil thousands of years ago, employing methods similar to\
-      \ modern extraction techniques.\n\n              2. Overview of Soybean Oil\
-      \ Industry:\n              Soybean oil is a vegetable oil extracted from soybeans\
-      \ (scientifically known as Glycine max). It is one of the most widely used vegetable\
-      \ oils and is beneficial due to its essential fatty acids, which contribute\
-      \ to overall health. It is also rich in plant sterols, which positively affect\
-      \ individual health, and contains a wealth of vitamins and minerals.\n     \
-      \         The health benefits of soybean oil include:\n\n              Cholesterol\
-      \ control: The high levels of fatty acids in soybean oil help regulate blood\
-      \ cholesterol levels and reduce the risk of diseases associated with high cholesterol,\
-      \ such as heart disease, strokes, and heart attacks. Fatty acids like palmitic\
-      \ acid and oleic acid are present in balanced quantities, helping to lower the\
-      \ risk of cardiovascular disease.\n              Alzheimer's disease: Soybean\
-      \ oil contains high levels of Vitamin K, which is linked to reducing Alzheimer's\
-      \ symptoms, acting as an antioxidant to protect nerve cells from damage.\n \
-      \             Bone health: Vitamin K in soybean oil stimulates bone growth and\
-      \ speeds up healing from injuries, and its calcium content helps reduce the\
-      \ risk of osteoporosis, especially in old age.\n              Skin and eye health:\
-      \ Omega-3 fatty acids in soybean oil protect cell membranes in delicate areas\
-      \ such as the eyes and skin, preventing bacteria and pollutants from entering.\
-      \ It also enhances vision by reducing free radicals, which contribute to macular\
-      \ degeneration and cataracts.\n              Improved appearance and overall\
-      \ health: The high Vitamin E content in soybean oil reduces acne and prevents\
-      \ sunburns. It also helps build new cells and reduces the risk of cancer, heart\
-      \ disease, and aging.\n                  \n                - note that today's\
-      \ date is {date_string} anything beyond add it as forcasting\n             \
-      \   "
-  Key Players:
-    bing_query: false
-    prompt: "\n        Generate the following section in [language]\n        ### Key\
-      \ Players\n            - Generate a list of the key companies involved in Egypt's\
-      \ oil industry in a table, divided into three categories:\n            ####\
-      \ Oil Extraction Companies (Private Sector):\n\n                الوطنية لاستخلاص\
-      \ الزيوت (Cargill)\n                الإسكندرية لاستخلاص الزيوت (AlexSeed)\n\
-      \                المجد لاستخلاص وتكرير الزيوت النباتية (Al Majd Group)\n   \
-      \             جولدن اويل (Golden Oil - Al Majd Group)\n                مجموعة\
-      \ الصفا (IGOS & AL SAFA OILEX)\n                الدولية لاستخلاص الزيوت (OILEX)\n\
-      \                ايفر جرين لعصر وتكرير الزيوت (Evergreen)\n\n            ####\
-      \ Oil Refining Companies (Private Sector):\n\n                شركة مصر الخليج\
-      \ لتصنيع الزيوت \"زيت اولين\"\n                شركة ارما للصناعات الغذائية\n\
-      \                الشركة العالمية للدهون \"فيكو\"\n                شركة سيلا\
-      \ للزيوت الغذائية\n                شركة صافولا مصر\n                الشركة المتحدة\
-      \ لتصنيع الزيوت \"شهد\"\n                شركة الصناعة والتجارة المصرية\n   \
-      \             شركة مصر الدولية للصناعات الغذائية\n                الشركة العربية\
-      \ لاستخلاص وتكرير الزيوت النباتية \"اريكو\"\n                شركة افكو مصر\n\
-      \                الشركة المصرية للزيوت الطبيعية\n\n            #### Oil Refining\
-      \ Companies (Public Sector):\n\n                شركة القاهرة للزيوت والصابون\n\
-      \                شركة مصر للزيوت والصابون\n                شركة النيل للزيوت\
-      \ والمنظفات\n                شركة الزيوت المستخلصة ومنتجاتها\n             \
-      \   شركة الاسكندرية للزيوت والصابون\n                شركة طنطا للزيوت والصابون\n\
-      \n        - Don't add any additional text.\n        - note that today's date\
-      \ is {date_string} anything beyond add it as forcasting\n        "
-    use_pdf: false
-  Key Players Updates:
-    bing_query: true
-    prompt: "\n        Generate the following section: in [language]\n        ####\
-      \ Key players updates\n        - Provide the latest updates and news for key\
-      \ companies involved in edible oil extraction and refining in Egypt.\n     \
-      \   - Cite the source.\n        - Don't add additional text.\n        - note\
+    prompt: "Generate in [language] the following sections: \n            \n     \
+      \       # A comprehensive analysis of the Electricity industry\n\n         \
+      \   ### Industry Overview:\n                - Introduction to Discuss the importance\
+      \ of the electricity industry to Egypt's economy\n                - highlight\
+      \ the role the electricity sector plays in powering key industries, supporting\
+      \ the country’s development goals,\n                and providing energy access\
+      \ to both urban and rural communities. Additionally, mention the impact of electricity\
+      \ on job creation, infrastructure development, and Egypt's growth as a regional\
+      \ energy hub.\n                -Subsection named Industry manufacturing stages\
+      \ discussing manufacturing stages of electricty.\n\n            - Add the sources\
+      \ as a domain name not the whole url like this [domain-name.top-level-domain].\n\
+      \            instructions: \n                - keep the introduction consice\
+      \ \n                - never output you have no results\n                - note\
       \ that today's date is {date_string} anything beyond add it as forcasting\n\
-      \        "
-    use_pdf: false
-  Latest Updates:
+      \                    "
+  Key players:
     bing_query: true
-    prompt: "\n        Generate the following section in [language]\n        ### Latest\
-      \ updates\n            - **Egypt**\n              - Provide Egypt's Consumption\
-      \ of edible oil.\n              - Examine the volume and key sources of sunflower\
-      \ and olive oil imports in {current_year}.\n              - Provide Egypt's\
-      \ self-sufficiency of edible oil.\n              - Discuss relevant government\
-      \ policies or initiatives aimed at boosting local production and reducing reliance\
-      \ on imports.\n              - Provide the current prices of \"consumer cooking\
-      \ oils\" in Egypt in a table.\n              - Discuss recent challenges caused\
-      \ by the global supply chain disruptions and the impact of population growth\
-      \ on demand for vegetable oils.\n\n            - **Worldwide**\n           \
-      \   - Discuss the latest global news in the oil extraction and refining industry,\
-      \ with a focus on the impact of geopolitical events like the Russia-Ukraine\
-      \ war, and their influence on global oil prices, supply chains, and the availability\
-      \ of raw materials.\n              - Highlight key global oil producers and\
-      \ their contributions to the market.\n              - Provide the most important\
-      \ oil-exporting countries to Egypt.\n              - Provide global edible oil\
-      \ production updates {current_year}.\n              - Provide global vegetable\
-      \ oil prices {current_year}.\n\n            - **citations**: Include credible\
-      \ sources for all data and statistics.\n            - All data should be the\
-      \ last updated {current_year}\n            - note that today's date is {date_string}\
-      \ anything beyond add it as forcasting\n            "
-    use_pdf: false
-  Market Research:
+    prompt: "Generate in [language] the following sections: \n\n\n            ## Companies\
+      \ that supports the Electricity sector in Egypt\n            - add news about\
+      \ the key players in egypt\n\n            ## Supplementary industries companies\
+      \ for Electricity sector in Egypt\n                ### talk about Lighting tools\
+      \ companies in egypt like elsewedy electric , Alshater Cables, egydir, Egypt\
+      \ cable and 10th of Ramadan Company for Electrical Industries (GAD)\n      \
+      \              - News about Lighting tools companies in egypt\n            \
+      \    ### talk about Lightening poles companies in egypt like Arab Organization\
+      \ for Industrialization, Egyptian German Lighting Poles, Al-Huda Solar Energy\n\
+      \                    - News about Lighting poles companies in egypt\n      \
+      \          ### talk about Electricity towers companies in egypt like Egyptian\
+      \ Company for Electrical Transformers, General Cable Egypt (formerly BICC Cables),\
+      \ Ankom Egypt, JST Forlead Company, Omega Company for Consultations and Mechanical\
+      \ & Electrical Contracting, Al-Shaheed Company for Metal and Plastic Processing\
+      \ and MB Industrial  \n                    - News about the electricity towers\
+      \ companies in egypt\n                    \n            - Add the sources as\
+      \ a domain name not the whole url like this [domain-name.top-level-domain].\n\
+      \            Instructions: \n            - do not add conclutions\n        \
+      \    - note that today's date is {date_string} anything beyond add it as forcasting\n\
+      \            "
+  Market updates in Egypt:
+    bing_query: true
+    prompt: "Generate in [language] the following sections: \n        \n        ###\
+      \ Market Updates and Latest News {current_year_m_1}-{current_year}\n\n     \
+      \   #### Domestic Updates and Latest News\n                - Provide the latest\
+      \ news and statistical data from reliable sources concerning the electricity\
+      \ industry, focusing on:\n                    - Egypt: Highlight recent developments,\
+      \ trends, statistical insights, prices changes, projects, consumption, producion,\
+      \ electricity exports, electricity imports that impacting the electricity sector\
+      \ in egypt.\n                        - Egypt Power & Renewables Projects Database,\
+      \ Egypt Top 10 Power\n                    - Regional Overviews\n           \
+      \     - Add news about the major players in the electricity sector in Egypt\n\
+      \n                - Add the sources as a domain name not the whole url like\
+      \ this [domain-name.top-level-domain].\n        Instructions: \n           \
+      \ - do not add conclutions\n            - note that today's date is {date_string}\
+      \ anything beyond add it as forcasting\n            \n                    "
+  Market updates in Globally:
+    bing_query: true
+    prompt: "Generate in [language] the following sections: \n\n        #### Global\
+      \ Updates and Latest News\n        - Global Trends: Highlight recent developments,\
+      \ trends, statistical insights, prices changes, projects, consumption, producion\
+      \ that impacting the electricity sector Globaly.\n                    \n   \
+      \                 \n            - Add the sources as a domain name not the whole\
+      \ url like this [domain-name.top-level-domain].\n       \n        Instructions:\
+      \ \n            - do not add conclutions\n            - note that today's date\
+      \ is {date_string} anything beyond add it as forcasting\n\n        "
+  Regulatory framework & Antidumping laws:
+    bing_query: true
+    prompt: "Generate in [language] the following sections: \n        ### Regulatory\
+      \ framework & Antidumping laws\n            - Write the most important regulations\
+      \ in egypt regarding the electricity sector\n        Instructions: \n      \
+      \      - do not add conclutions\n            \n            - note that today's\
+      \ date is {date_string} anything beyond add it as forcasting\n             \
+      \       "
+  SWOT Analysis and Conclution:
     bing_query: false
-    prompt: "\n        Generate the following section in [language]\n        ### The\
-      \ market research department report of july at our bank on the industry\n  \
-      \          ,Financial Performance,Financial Position,Cash Flow Position,Key\
-      \ P&L Figures,Key B/S Figures,,,,,,,,,,,\n            1Q24 figures,EBITDA Margin,NPM,ROE,ROA,Current\
-      \ Ratio,Fin. Lev.,Debt /Equity,OCF (EGP Mn),FCF (EGP Mn),FCF/OCF,Revenue (EGP\
-      \ Mn),% 4 y-o-y,Net income (EGP Mn),% 4 y-o-y,Total assets (EGP Mn),Total liab.\
-      \ (EGP Mn)\n            Cairo Oils & Soap Co,11.80%,7.70%,26.60%,7.60%,0.95,2.35,67.60%,-82.69,-11,0.13,372.3,70%,28.82,34.40%,825.8,474.1\n\
-      \            Ajwa for Food Ind. (Q- end. 12-23),-9.30%,-14.00%,3.80%,1.30%,0.43,3.08,1.60%,33.45,32.63,0.98,400.4,-19%,-43.51,224%,\"\
-      3,937.20\",\"2,638.80\"\n            Extracted Oil and Derivatives Co,0.00%,0.30%,10.10%,0.80%,1.06,12.1,0.00%,-13.84,-14.47,1.05,948.8,-2%,2.86,-54.18%,\"\
-      3,087.60\",\"2,850.90\"\n            Ismailia Co for Food Industries,33.00%,39.90%,42.90%,24.30%,2,1.77,41.80%,12.23,11.98,0.98,80.08,102%,31.94,334.25%,249.1,119.6\n\
-      \            Misr Oils and Soap Co,-1.00%,-0.10%,0.50%,0.10%,1.19,3.89,0.00%,-18.68,-18.96,1.01,853.8,13%,-0.57,-231.29%,337,263.1\n\
-      \n            - generate the table columns as rows and rows as columns\n   \
-      \         - Extract all the data and table related to Agriculture & Forestry\
-      \ from the report. Present the companies as columns and the financial indicators\
-      \ as rows in the table for better clarity.\n            - Don't add conclusion.\n\
-      \            - note that today's date is {date_string} anything beyond add it\
-      \ as forcasting\n        "
-    use_pdf: false
-  Market Updates:
-    bing_query: false
-    prompt: "\n        Generate the following section in [language]\n        ### Market\
-      \ Updates\n            - Extract the sales data in a table for \"Oils and Fats,\
-      \ sales, EEGPmn\", and \"Oils and Fats, sales, EEGPmn, % groowth  y-o-y\" across\
-      \ multiple years, where years are the column headers.\n            - Cite the\
-      \ source.\n        - Don't add additional text.\n        - note that today's\
+    prompt: "\n        Generate in [language] the following sections: \n\n       \
+      \         ### SWOT Analysis:\n                - Conduct a SWOT analysis table\
+      \ of the electricity sector, identifying strengths, weaknesses, opportunities,\
+      \ and threats.\n                - Add the sources as a domain name not the whole\
+      \ url like this [domain-name.top-level-domain].\n\n                ### Conclusion:\n\
+      \                - Provide a comprehensive conclusion on industry trends (growing\
+      \ or not) for credit decision reviewers with showing some statistics and make\
+      \ it a bit longer.\n            Instructions: \n            - note that today's\
+      \ date is {date_string} anything beyond add it as forcasting\n            \n\
+      \                        "
+  pdf: Raw_data/electricity/
+Fertilizers:
+  Anti dumping laws and Regulatory framework:
+    bing_query: true
+    prompt: "\n        Generate the following sections in [language] then format them\
+      \ according to the required structure in the [Instructions]:\n\n        ###\
+      \ Anti dumping laws and Regulatory framework:\n        -Generate antidumping\
+      \ laws for fertilizers in egypt if found only!.\n        -Genereate the regulatory\
+      \ framework for fertilizers in egypt.\n        [Instructions]:\n           \
+      \ -just 2 paragraphs one per each\n            -Don't include any conclusions.\n\
+      \            -Include the citation source.\n            - note that today's\
       \ date is {date_string} anything beyond add it as forcasting\n        "
-  Swot Analysis & Conclusion:
+  BM market research:
+    bing_query: false
+    prompt: "\n            Generate the following sections in [language] then format\
+      \ them according to the required structure in the [Instructions]:\n\n      \
+      \      ### Market research:\n            -Generate the market research from\
+      \ the given data tables in [Data_1] where both of them are tables.\n       \
+      \     ------------------------------------------------------------\n       \
+      \ [Data_1]\n        1Q24 figures\tFinancial Performance\tFinancial Position\t\
+      Cash Flow Position\tKey P&L Figures\tKey B/S Figures\t\t\t\t\t\t\t\t\t\t\t\n\
+      \        EBITDA Margin\tNPM\tROE\tROA\tCurrent Ratio\tFin. Lev.\tDebt /Equity\t\
+      OCF (EGP Mn)\tFCF (EGP Mn)\tFCF/OCF\tRevenue (EGP Mn)\t% 4 y-o-y\tNet income\
+      \ (EGP Mn)\t% 4 y-o-y\tTotal assets (EGP Mn)\tTotal liab. (EGP Mn)\t\n     \
+      \   Abu Qir Fertilizers\t37%\t150%\t46%\t37%\t5.5\t1.3\t-\t2,744\t2,625\t95%\t\
+      5,425\t-11%\t8,122\t46%\t42,736\t9,391\n        Egyptian Financial & Industrial\
+      \ SAE\t27%\t24%\t19%\t6%\t1.2\t3\t103%\t-392\t-512\t-\t1,785\t81%\t428\t93%\t\
+      6,558\t4,368\n        Misr Fertilizers Production Co SAE\t44%\t159%\t22%\t16%\t\
+      2.1\t1.3\t49%\t1,816\t1,709\t94%\t4,796\t220%\t7,648\t94%\t63,272\t17,507\n\
+      \        Egyptian Chemical Industries KIMA\t30%\t2%\t1%\t0.40%\t1.8\t3.1\t160%\t\
+      2,293\t620\t27%\t4,612\t98%\t102\t-45%\t25,852\t17,469\n        Samad Misr SAE\t\
+      -4%\t17%\t6%\t5%\t5.4\t1.1\t-\t5\t5\t100%\t40\t-25%\t7\t-77%\t123\t11\n    \
+      \    Mean Average\t30%\t24%\t19%\t6%\t2.1\t1.3\t103%\t1,293\t889\t94%\t3,332\t\
+      81%\t3,261\t46%\t27,708\t9,749\n\n\n\n\n            [Instructions]:\n      \
+      \      your role is a risk manager who works in credit approvals in banking\
+      \ sector , do the following:\n                -The section should be named \"\
+      Our Bank's Market Research Department Report on the Industry July {current_year}\"\
+      .\n                -Generate the table given in [Data_1] in the response.\n\
+      \                -Make Names for the [Data_1] table from what you understand.\n\
+      \                -Comment on each table separtly in [language] make it detailed\
+      \ .\n                -Make sure the data is relevant to our context feltilizers\
+      \ in Egypt.\n                -Don't include any conclusions.\n             \
+      \   -Include the citation source here it's market research by Banque misr team.\n\
+      \                - note that today's date is {date_string} anything beyond add\
+      \ it as forcasting\n                - generate the table columns as rows and\
+      \ rows as columns\n            "
+  Competitve Analysis:
     bing_query: true
-    prompt: "\n        Generate the following section in [language]\n        ### SWOT\
-      \ Analysis\n            - Create a detailed table for SWOT analysis for the\
-      \ oil extraction and refining industry in Egypt, highlighting its strengths,\
-      \ weaknesses, opportunities, and threats.\n            - Be specific and accurate.\n\
-      \        ###Industry Characteristics Analysis:\n\n           - Create a table\
-      \ of the following elements:\n              Maturity: The industry is in a mature\
-      \ phase, characterized by moderate risk. It is closely linked to the food sector,\
-      \ with increasing demand for its products each year. The industry benefits from\
-      \ Egypt's competitive advantages, such as lower energy and labor costs, making\
-      \ it attractive to investors. The continuous population growth is expected to\
-      \ further drive demand.\n\n              Cost Structure: The industry exhibits\
-      \ low risk in terms of cost structure. It primarily consists of variable costs,\
-      \ which constitute the majority of total expenses. This allows for flexibility\
-      \ in adjusting to fluctuations in demand.\n\n              Cyclicality: Classified\
-      \ as non-cyclical, the industry carries a low risk concerning economic cycles.\
-      \ The demand for food is generally stable and not significantly affected by\
-      \ changes in economic conditions, although the prices of some raw materials\
-      \ may fluctuate due to economic cycles.\n\n              Dependence: There is\
-      \ a moderate risk associated with dependence. The sector relies on the availability\
-      \ of essential commodities, such as wheat and corn, sourced from both local\
-      \ markets and imports. As these goods are fundamental to daily life and are\
-      \ used in various food industries, like bread production, their demand remains\
-      \ consistently high. Additionally, government efforts to ensure affordable access\
-      \ to these products and accommodate population growth bolster their necessity.\n\
-      \n              Substitutes: The risk is low in terms of substitutes, as there\
-      \ are no alternatives to strategic goods, which are essential for everyday living.\n\
-      \n              Regulations: The regulatory environment poses moderate risk.\
-      \ The government actively supports the industry by launching projects to expand\
-      \ agricultural areas and boost the production of strategic goods. The industry\
-      \ is closely monitored to maintain market stability, meet consumption needs,\
-      \ and regulate prices, ensuring they remain accessible to consumers.\n\n   \
-      \           Profitability: Profitability carries a moderate risk. The industry\
-      \ is considered highly profitable because it significantly adds value by converting\
-      \ low-cost raw materials into high-value finished products.\n\n\n        ###\
-      \ Conclusion\n            - Provide a comprehensive analysis for oils ectraction\
-      \ and refining industry trends, highlighting whether each industry is growing\
-      \ or declining. Include relevant statistics and data to support your conclusions,\
-      \ tailored specifically for credit decision reviewers.\n        - note that\
-      \ today's date is {date_string} anything beyond add it as forcasting\n     \
-      \   "
-    use_pdf: false
-  pdf: Raw_data/Oil_Refining_And_Extraction/
-Food and beverage (retail):
+    prompt: "\n\n           Generate the following section in [language] and follow\
+      \ up the [Instructions] strictly:\n\n            ### key market players in Egypt:\n\
+      \            - Key market players in Fertilizers industry in Egypt\n       \
+      \     [Instructions]:\n            -include dates , statistics.\n          \
+      \  -Geographical area of operation per each company.\n            -Numbers is\
+      \ strictly required per each type.\n            -Include citations,numbers and\
+      \ statistics for each requirement.\n            -Include refrences for every\
+      \ information you write.\n            -avoid contradictions in statistics and\
+      \ numbers.\n            -Make them in a table.\n            -Don't include full\
+      \ links make it citation without hyperlinks\n            - note that today's\
+      \ date is {date_string} anything beyond add it as forcasting\n            \n\
+      \n            "
+  Conclusion:
+    bing_query: false
+    prompt: "\n                Generate the following sections in [language] then\
+      \ format them according to the required structure in the [Instructions]:\n\n\
+      \                ### Conclusion:\n                -Highligh the main highlights\
+      \ concerning the fertilizers Market in Egypt and worldwide\n               \
+      \ -Include a constructive forecast regarding the fertilizers after the current\
+      \ year based on the information you knew earlier from the previous prompts.\n\
+      \                -Illustrate your forecasts reasons\n\n                [Instructions]:\n\
+      \                    -1 paragraph.\n                    -Detailed and focusing\
+      \ on the main highlights.\n                    -Include latest projects mentioned\
+      \ earlier or explorations.\n                    -Include the Oppourtuinties\
+      \ for it.\n                    - note that today's date is {date_string} anything\
+      \ beyond add it as forcasting\n                "
+  Introduction:
+    bing_query: false
+    prompt: "\n\n            Generate the following section in [language] and follow\
+      \ up the [Instructions] strictly:\n\n            # A comprehensive analysis\
+      \ of the fertilizers industry\n\n            ### The Introduction and Importance\
+      \ fertilizers industry\n            - Introduction about the fertilizers industry\
+      \ in Egypt and worldwide.\n            - Importance of the fertilizer industry\
+      \ in Egypt and worldwide\n            [Instructions]\n            -Generate\
+      \ a paragraph of 6 lines and introduce the main points as instructed earlier.\n\
+      \            -if you are going to include dates make it most updated only.\n\
+      \            -include dates , statistics , history.\n            -Include citations,numbers\
+      \ and statistics for each requirement.\n            -Include refrences for every\
+      \ information you write.\n            - note that today's date is {date_string}\
+      \ anything beyond add it as forcasting\n            \n\n            "
+  Introduction 2:
+    bing_query: true
+    prompt: "\n\n           Generate the following section in [language] and follow\
+      \ up the [Instructions] strictly:\n\n            ### Industry overview including\
+      \ (Fertilizers types,Production stages)\n            - Fertilizers types overview\n\
+      \            - Production stage of each type\n            [Instructions]\n \
+      \           -Generate a paragraph of 6 lines and introduce the main points as\
+      \ instructed earlier.\n            -include dates , statistics , history.\n\
+      \            -Include citations,numbers and statistics for each requirement.\n\
+      \            -Make a subsection for each fertilizer type and it's production\
+      \ stages.\n            -Include refrences for every information you write.\n\
+      \            -Don't include full links make it citation without hyperlinks.\n\
+      \            - note that today's date is {date_string} anything beyond add it\
+      \ as forcasting\n            \n\n            "
+  Market Statistics:
+    bing_query: true
+    prompt: "\n\n           Generate the following section in [language] and follow\
+      \ up the [Instructions] strictly:\n\n            ### statistics about potasium\
+      \ chloride and potasium sulphate\n            - Statistics about potasium chrolide\n\
+      \            - Statistics about potasium sulphate\n            [Instructions]\n\
+      \            -Generate a paragraph a short paragraph for both potasium chloride\
+      \ and potasium sulphate.\n            -include dates , statistics , history.\n\
+      \            -Include citations,numbers and statistics for each requirement.\n\
+      \            -Make a subsection for each fertilizer type and it's production\
+      \ stages.\n            -Include refrences for every information you write.\n\
+      \            -Don't include full links make it citation without hyperlinks.\n\
+      \            -Make it in a single table, no multiple tables are allowed.\n \
+      \           -Handle the table properly to avoid any errors by making the table\
+      \ cells matching the sizes.\n            - note that today's date is {date_string}\
+      \ anything beyond add it as forcasting\n            \n\n            "
+  Market Updates Globally:
+    bing_query: true
+    prompt: "\n\n           Generate the following section in [language] and follow\
+      \ up the [Instructions] strictly:\n\n            ### Latest worldwide market\
+      \ supply and demand in countries that's linked to Egypt {current_year}:\n  \
+      \          - Supply and demand for countries that are linked to Egypt in the\
+      \ field of Fertilizers co-operation {current_year}\n            [Instructions]:\n\
+      \            -include dates , statistics.\n            -Numbers is strictly\
+      \ required per each type.\n            -Include citations,numbers and statistics\
+      \ for each requirement.\n            -Include refrences for every information\
+      \ you write.\n            -Make them in a table.\n            -Don't include\
+      \ full links make it citation without hyperlinks\n            \n           \
+      \ - note that today's date is {date_string} anything beyond add it as forcasting\n\
+      \n            "
+  Market Updates Globally 2:
+    bing_query: true
+    prompt: "\n\n              Generate the following section in [language] and follow\
+      \ up the [Instructions] strictly:\n\n                ### Latest Market Updates\
+      \ Worldwide:\n                - latest news about fertilizers prices in the\
+      \ world {current_year}\n                - world Market Trends in Fertilizers\
+      \ industry {current_year}\n                - world Government projects and support\
+      \ to Fertilizers industry in world {current_year}\n                [Instructions]\n\
+      \                -Generate a latest news and Trends subsection in world.\n \
+      \               -Generate Governmental projects subsection in world\n      \
+      \          -include dates , statistics.\n                -Include citations,numbers\
+      \ and statistics for each requirement.\n                -Include refrences for\
+      \ every information you write.\n                -Don't include full links make\
+      \ it citation without hyperlinks.\n                - note that today's date\
+      \ is {date_string} anything beyond add it as forcasting\n                \n\n\
+      \                "
+  Market Updates In Egypt:
+    bing_query: true
+    prompt: "\n\n            Generate the following section in [language] and follow\
+      \ up the [Instructions] strictly:\n\n            ### Latest Market Updates in\
+      \ Egypt:\n            - latest news about fertilizers prices in Egypt {current_year}\n\
+      \            - Egyptian Market Trends in Fertilizers industry {current_year}\n\
+      \            - Egyptian Government projects and support to Fertilizers industry\
+      \ in Egypt {current_year}\n            [Instructions]\n            -Generate\
+      \ a latest news and Trends subsection in Egypt.\n            -Generate Governmental\
+      \ projects subsection in Egypt\n            -include dates , statistics.\n \
+      \           -Include citations,numbers and statistics for each requirement.\n\
+      \            -Include refrences for every information you write.\n         \
+      \   -Don't include full links make it citation without hyperlinks\n        \
+      \    - note that today's date is {date_string} anything beyond add it as forcasting\n\
+      \            \n\n            "
+  Market Updates in Egypt:
+    bing_query: true
+    prompt: "\n\n                Generate the following section in [language] and\
+      \ follow up the [Instructions] strictly:\n\n                ### Latest Market\
+      \ Production/Exports/Consumption in Egypt {current_year}:\n                -\
+      \ Egyptian production in fertilizers {current_year}\n                - Egyptian\
+      \ Exports in fertilizers {current_year}\n                - Egyptian Consumptions\
+      \ in fertilizers {current_year}\n                [Instructions]\n          \
+      \      -Generate a table for each type of fertlizer containing the 3 diagonals\
+      \ required which are Production/Exports/Consumption .\n                -include\
+      \ dates , statistics.\n                -Numbers is strictly required per each\
+      \ type.\n                -Include citations,numbers and statistics for each\
+      \ requirement.\n                -Include refrences for every information you\
+      \ write.\n                -For the imports subsection focous on mentioning that\
+      \ Egypt has a self suffiecency in fertilizers indusrty and for production/exports/consumption\
+      \ mention them in a table.\n                -Don't include full links make it\
+      \ citation without hyperlinks.\n                -if there's a type of fertilizers\
+      \ that doesn't have statistics then don't mention it.\n                -الواردات\
+      \ هي هي الاكتفاء الذاتي, imports is the same as self sufficiency.\n        \
+      \        - note that today's date is {date_string} anything beyond add it as\
+      \ forcasting\n                \n\n                "
+  SWOT:
+    bing_query: false
+    prompt: "\n            Generate the following sections in [language] then format\
+      \ them according to the required structure in the [Instructions]:\n\n      \
+      \      ### Strengths weakness oppourtuintes threas analysis:\n            -Generate\
+      \ and Extract Strengths , weakness , opportuinties and threats concerning the\
+      \ Fertilizers Market in Egypt from the Given Data.\n            -Make sure there's\
+      \ no contradictions.\n            -Data should be related to Fertilizers industry\
+      \ in Egypt.\n\n            [Instructions]:\n                -Generate the response\
+      \ as a matrix table.\n                -Illustrate the reasons for the swot analysis\
+      \ from the data in context.\n                -Make sure the data is relevant\
+      \ to our context Fertilizers industry in Egypt.\n                -Data should\
+      \ be related to Fertilizers industry in Egypt so the focus here must be on fertilizers\
+      \ industry in Egypt only.\n                -Be specific , detailed oriented\
+      \ and include details as much as possible.\n                -Don't include any\
+      \ conclusions.\n                -Include the citation source.\n            \
+      \    - note that today's date is {date_string} anything beyond add it as forcasting\n\
+      \            "
+  pdf: Raw_data/fertilizers/
+Food_bvrg_retail:
   Competitve Analysis:
     bing_query: true
     prompt: "\n\n            Generate in [language] the following section and follow\
@@ -1966,7 +1587,7 @@ Food and beverage (retail):
       \            -Make it in a table \n            - note that today's date is {date_string}\
       \ anything beyond add it as forcasting\n\n            \n\n            "
   pdf: Raw_data/food_beverage/
-Fruits and vegetables:
+Fruits_and_vegetables:
   Competitor analysis:
     bing_query: true
     prompt: "Generate the following sections in [language]:\n\n        Create a table\
@@ -2264,7 +1885,7 @@ Grains:
       \      - note that today's date is {date_string} anything beyond add it as forcasting\n\
       \        \n        "
   pdf: Raw_data/grain/
-Information Technology:
+INFORMATION_TECHNOLOGY:
   Anti dumping laws and Regulatory framework:
     bing_query: false
     prompt: "\n                Generate the following sections in [language] then\
@@ -2578,7 +2199,181 @@ Information Technology:
       \ today's date is {date_string} anything beyond add it as forcasting\n     \
       \               \n                "
   pdf: Raw_data/It/
-Oil and Gas:
+Meat:
+  'Analyze the meat and fish industry in Egypt ':
+    bing_query: true
+    prompt: " Generate the following sections in [language]\n        Analyze the meat\
+      \ and fish industry in Egypt by focusing on the following aspects:\n       \
+      \ \n        ### Consumption:\n        - What are the current trends in meat\
+      \ and fish consumption in Egypt?\n        - How do factors like population growth,\
+      \ changing dietary habits, and economic conditions influence demand for meat\
+      \ and fish?\n        \n        ### Production:\n        - What is the current\
+      \ state of meat and fish production in Egypt?\n        - Identify major players\
+      \ in the market and their contributions to the national supply of meat and fish.\n\
+      \        - Discuss any government initiatives or regulations that affect production,\
+      \ such as subsidies, trade policies, or livestock development programs.\n  \
+      \      \n        ### Exports:\n        - Examine the role of the meat and fish\
+      \ sectors in Egypt's export economy.\n        - What types of meat products\
+      \ and fish are being exported, and to which countries?\n        - Assess the\
+      \ impact of foreign investment in Egypt’s meat and fish production and export\
+      \ sectors.\n        \n        ### Imports:\n        - Identify key imports related\
+      \ to the meat and fish industry, such as animal feed, livestock, or advanced\
+      \ processing technologies.\n        - How do import trends affect the local\
+      \ market for meat and fish in Egypt?\n        - Discuss any challenges or barriers\
+      \ related to imports in the industry, such as tariffs or supply chain disruptions.\n\
+      \        \n        Instructions:\n            - Add the sources' names, not\
+      \ links.\n            - The answer should be in [language].\n            - The\
+      \ response should be related to the meat and fish market.\n            - Don't\
+      \ include in your response any information related to chicken, frozen meat,\
+      \ frozen fish, or chicken companies.\n            - Generate a table that represents\
+      \ this part if applicable.\n            - Include numbers that represent the\
+      \ current situation.\n            - The response should be updated after {current_year_m_1}.\n\
+      \            - No need for data before {current_year_m_1}.\n            - Don't\
+      \ include a conclusion in your response.\n            - If you don't have enough\
+      \ info about any item, don't include it in the table.\n            - note that\
+      \ today's date is {date_string} anything beyond add it as forcasting\n     \
+      \               "
+  Competitive Landscape Analysis:
+    bing_query: true
+    prompt: " Generate the following sections in [language]\n        \n        ###\
+      \ Competitive Landscape Analysis: Top Meat, Frozen Meat, and Frozen Fish Companies\
+      \ in Egypt\n        \n        Instructions:\n        1. Title: \"تحليل التنافسية\
+      \ للشركات الرائدة في قطاع اللحوم واللحوم المجمدة في مصر\".\n        2. Table\
+      \ Requirements:\n            - Compare major companies operating in the meat,\
+      \ frozen meat, and frozen fish sectors.\n            these companies should\
+      \ be related to meat dont inlude conpanies like إسماعيلية مصر للدواجن , كوكاكولا\
+      \ مصر\n        \n        \n        3. Table Format: The table should be large\
+      \ and clear, suitable for inclusion in a formal document.\n        4. Sources:\
+      \ Cite the data sources by name without including direct links.\n        5.\
+      \ Language: The table and instructions should be in **[language]**.\n      \
+      \  6. Timeframe: Focus on data post-{current_year_m_1} or as recent as possible.\
+      \ Avoid data from before {current_year_m_1}.\n        7-the response should\
+      \ be related  frozen meat  ,  meat  market and frozen fish Do not include anything\
+      \ else in your response like (chicken and frozen chicken)\n        8-don't include\
+      \ in your response any information related to chicken , frozen chicken and chicken\
+      \ companies\n        9-don't add conclusion or introduction in your response\n\
+      \        - note that today's date is {date_string} anything beyond add it as\
+      \ forcasting\n            "
+  Conclusion:
+    bing_query: false
+    prompt: "\n        \n        Generate the following sections in [language], then\
+      \ format them according to the required structure in the [Instructions]:\n \
+      \       \n        Conclusion:\n        Highlight the key points concerning the\
+      \   meat  and frozen meat  market in Egypt and worldwide.\n        Include a\
+      \ constructive forecast for the meat , frozen meat and frozen fish   market\
+      \  after {current_year} based on the information discussed earlier in the previous\
+      \ prompts.\n        Illustrate the reasons behind your forecast.\n        [Instructions]:\n\
+      \            -one paragraph.\n            -Detailed and focused on the main\
+      \ highlights.\n            -Include the latest projects mentioned earlier or\
+      \ any explorations.\n            -Include the opportunities available in the\
+      \ frozen meat  ,  meat  market and frozen fish .\n            -don’t include\
+      \ any recommendations in this section\n            -the response should be related\
+      \  frozen meat  ,  meat  market and frozen fish Do not include anything else\
+      \ in your response like (chicken and frozen chicken)\n            -don't include\
+      \ in your response any information related to chicken , frozen chicken and chicken\
+      \ companies\n            - note that today's date is {date_string} anything\
+      \ beyond add it as forcasting\n        \n                    "
+  Introduction:
+    bing_query: false
+    prompt: "\n \n        Generate the following sections in [language]:\n       \
+      \ # A comprehensive analysis of the Meat industry\n\n        ### Industry Overview:\n\
+      \        \n        \n        ### Meat ,  Frozen Meat  and frozen fish Industry\
+      \ History & Market Statistics {current_year_m_14} - {current_year}:\n      \
+      \  \n        \n        ### Meat ,   Frozen Meat  frozen and  fish Industry Performance\
+      \ {current_year_m_2} - {current_year}:\n        \n        \n        ### Importance\
+      \ of the Meat , Frozen Meat and frozen fish Industry in Egypt:\n        - Discuss\
+      \ the **importance of the meat and frozen meat industry** to Egypt's economy,\
+      \ highlighting its role in providing food security, employment opportunities,\
+      \ and its contributions to GDP.\n        - Include data and sources for all\
+      \ information provided.\n        - Your output should be **related to the meat\
+      \ and frozen fish  industry in Egypt only** (exclude poultry).\n        - Do\
+      \ **not** add any recommendations in your response.\n        -provide numbers\
+      \ that represent the current situation\n        - note that today's date is\
+      \ {date_string} anything beyond add it as forcasting\n                    "
+  Market Updates and Latest News Globally:
+    bing_query: true
+    prompt: "\n         Generate the following sections in [language]\n        \n\
+      \        ### Market Updates and Latest News Globally ({current_year}) for meat\
+      \ frozen  meat , frozen fish  industry\n            - Provide the latest news\
+      \ and statistical data from reliable sources concerning the **meat and frozen\
+      \ meat industry**, focusing on:\n            - **Global Market**: Highlight\
+      \ recent developments, trends, and statistical insights impacting the global\
+      \ **meat and frozen meat sector**, including production, consumption, imports,\
+      \ exports, and key market drivers.\n            - Add the sources' names, not\
+      \ links.\n            - The response should include information after {current_year_m_1}.\n\
+      \            - Do **not** add a conclusion.\n            - Ensure the output\
+      \ is related to **meat , frozen meat and frozen fish  only** (exclude poultry).\n\
+      \            - the response should be related  frozen meat  ,  meat  market\
+      \ and frozen fish Do not include anything else in your response like (chicken\
+      \ and frozen chicken)\n            - don't include in your response any information\
+      \ related to chicken , frozen chicken and chicken companies\n            -the\
+      \ response should be updated after {current_year_m_1}\n            - note that\
+      \ today's date is {date_string} anything beyond add it as forcasting\n     \
+      \   \n                    "
+  'Market updates in egypt ':
+    bing_query: true
+    prompt: "\n             Generate the following sections in [language] in detail:\n\
+      \        \n        ### Market Updates and Latest News in Egypt ({current_year})\
+      \ related to the Meat, Frozen Meat, and Frozen Fish Industry:\n        \n  \
+      \          - Provide detailed updates and statistical data from reliable sources\
+      \ about the meat, frozen meat, and frozen fish industry in Egypt, focusing on:\n\
+      \                - **Recent Developments**: Key news regarding production capacity,\
+      \ supply chain disruptions, government interventions, and market shifts impacting\
+      \ the meat, frozen meat, and frozen fish sectors.\n                - **Impact\
+      \ of Refugees**: Assess the effects of the increasing refugee population in\
+      \ Egypt on the market dynamics, particularly how demand, consumption patterns,\
+      \ and available supply of meat, frozen meat, and frozen fish are being affected.\n\
+      \                - **Current Prices**: Present up-to-date pricing for various\
+      \ types of meat (beef, lamb, frozen beef, etc.) and frozen fish as of {current_year}.\
+      \ Highlight any regional or seasonal price fluctuations, and compare them to\
+      \ the past year.\n                - **Consumption, Production, Exports, and\
+      \ Imports**: Include recent statistics and trends concerning the consumption,\
+      \ production volumes, and trade of meat, frozen meat, and frozen fish, identifying\
+      \ key shifts in import/export balances.\n                - **Environmental Impact**:\
+      \ Examine any recent reports or data on the environmental impacts of the meat\
+      \ and frozen fish industries in Egypt, including issues like land use, water\
+      \ consumption, and waste management.\n                - **Technological Advancements**:\
+      \ Discuss any new technological developments in meat production, frozen meat\
+      \ processing, and frozen fish processing, such as the use of automation, AI,\
+      \ or sustainable farming practices.\n                - **Labor Market and Employment**:\
+      \ Provide insights into the labor force within the meat, frozen meat, and frozen\
+      \ fish industries, noting any challenges such as labor shortages, worker conditions,\
+      \ or government policies affecting employment.\n                - **Supply Chain\
+      \ Challenges**: Outline any current disruptions or challenges in the supply\
+      \ chain, including logistical issues, feed shortages, or rising transportation\
+      \ costs for meat, frozen meat, and frozen fish.\n        \n            - Ensure\
+      \ the information is sourced from credible and reliable sources, and **include\
+      \ the source names** (not links).\n            - **Do not include a conclusion**\
+      \ or personal commentary.\n            - Ensure the response reflects today’s\
+      \ date: {date_string}.\n            - The output should be related to meat,\
+      \ frozen meat, and frozen fish (no poultry).\n            - The response should\
+      \ be in [language]..\n            - note that today's date is {date_string}\
+      \ anything beyond add it as forcasting\n                    "
+  SWOT Analysis:
+    bing_query: false
+    prompt: "\n         Generate the following sections in [language], then format\
+      \ them according to the required structure in the [Instructions]:\n        ###\
+      \ (SWOT) Analysis\n            Strengths, Weaknesses, Opportunities, and Threats\
+      \ (SWOT) Analysis for meat  , frozen meat  and  frozen fish in Egypt:\n    \
+      \        Generate and extract the strengths, weaknesses, opportunities, and\
+      \ threats concerning the meat and frozen meat market in Egypt from the given\
+      \ data.\n            Ensure that there are no contradictions.\n        \n  \
+      \      [Instructions]:\n        - Generate the response as a table.\n      \
+      \  - Add a header for this section titled 'SWOT'.\n        - Include population\
+      \ increase in this table.\n        - Illustrate the reasons for the SWOT analysis\
+      \ from the data in context.\n        - Make sure the data is relevant to our\
+      \ context in the meat and frozen meat industry in Egypt.\n        - Be specific,\
+      \ detail-oriented, and include as many details as possible.\n        - Include\
+      \ the citation source.\n        - Do not include any conclusions.\n        -\
+      \ the response should be [language]\n        -the response should be related\
+      \  frozen meat  ,  meat  market and frozen fish Do not include anything else\
+      \ in your response like (chicken and frozen chicken)\n        -don't include\
+      \ in your response any information related to chicken , frozen chicken and chicken\
+      \ companies\n        -don't add notes after your response\n        - note that\
+      \ today's date is {date_string} anything beyond add it as forcasting\n     \
+      \          "
+  pdf: Raw_data/meat
+OIL_GAS:
   BM market research:
     bing_query: false
     prompt: "\n        Generate the following sections in [language] language then\
@@ -2901,7 +2696,212 @@ Oil and Gas:
       \ date is {date_string} anything beyond add it as forcasting\n            \n\
       \n        "
   pdf: Raw_data/oil_gas/
-Realestate:
+Oil_Refining_Extraction:
+  Introduction & Importance:
+    bing_query: false
+    prompt: "\n        Generate the following section in [language]\n\n        # A\
+      \ comprehensive analysis of the (Oil Refining & Extraction)\n\n        ### Introduction\
+      \ and Importance\n\n            1. General Overview of the Oil Industry:\n \
+      \             Fats, which are widespread in both the plant and animal worlds,\
+      \ are a major source of concentrated energy, providing double the energy produced\
+      \ by equal amounts of proteins or carbohydrates. Thus, fats are a crucial dietary\
+      \ source for humans.\n              Many important industries rely on fats,\
+      \ such as oil extraction and refining from plant and animal sources, hydrogenated\
+      \ oil production for margarine and cooking oils, as well as diverse industries\
+      \ such as soap manufacturing, varnishes, glycerides, and the separation of glycerin\
+      \ and fatty acids for other industrial uses.\n              Due to the significance\
+      \ of fats, they hold a prominent place in the economies of major countries,\
+      \ which focus on the development of their plant and animal sources, whether\
+      \ terrestrial or marine, while enhancing extraction and manufacturing processes\
+      \ to high-quality standards.\n              The Arab world is rich in important\
+      \ natural sources of oils and fats, such as olives, cotton seeds, sesame, sunflower,\
+      \ and soybeans. The vegetable oil industry is one of the most significant and\
+      \ ancient industries in most countries, having been known to the Mediterranean\
+      \ civilizations, particularly in the extraction of olive oil.\n\n          \
+      \    Two types of fats exist in nature:\n\n              Animal fats:\n    \
+      \          These are derived from animal origins and can be greasy, fatty, or\
+      \ oily, depending on their melting points. Greases are solid fats at room temperature,\
+      \ while oils are liquid at the same temperature, and fats fall between the two.\n\
+      \              Beef and sheep fats are commercially viable sources, and significant\
+      \ amounts of oils can be extracted from marine fish and whales, which were historically\
+      \ hunted for their oils alone but are now utilized more comprehensively.\n \
+      \             Statistics indicate a rising production of animal fats, especially\
+      \ in recent years, including butter, animal fats, and fish and whale oils.\n\
+      \n              Vegetable fats:\n              There are over 100 types of raw\
+      \ plant materials used for oil production today, with annual plants being the\
+      \ primary source. Examples include sunflower, corn, sesame, cottonseed, soybeans,\
+      \ and peanuts. Perennial trees like coconut, palm, and olive trees serve as\
+      \ secondary sources.\n              Notably, plants with oilseeds, such as corn,\
+      \ rice, and cotton, yield oil as a secondary product.\n              The following\
+      \ table shows the approximate oil content in some seeds and oil-bearing fruits:\n\
+      \n              Raw Material\t%\tRaw Material\t%\n              Castor seeds\t\
+      40-50\tTobacco seed\t30-43\n              Cottonseed\t15-20\tSafflower seed\t\
+      25-37\n              Flaxseed\t35-40\tPalm fruit\t20-30\n              Hempseed\t\
+      30-35\tPalm kernel\t30-60\n              Rape seed\t22-49\tOlive fruit\t15-30\n\
+      \              Soybean\t18-20\tOlive stone\t10-15\n              Sesame seed\t\
+      40-50\tCoconut fruit\t40-65\n              Sunflower seeds\t25-45\tCorn seeds\t\
+      17-20\n\n              Vegetable oils are present in all parts of oil-bearing\
+      \ plants, including the stem, leaves, roots, flowers, and fruits, although fruits\
+      \ contain the highest percentage of fats. It is believed that the Chinese were\
+      \ the first to use oil thousands of years ago, employing methods similar to\
+      \ modern extraction techniques.\n\n              2. Overview of Soybean Oil\
+      \ Industry:\n              Soybean oil is a vegetable oil extracted from soybeans\
+      \ (scientifically known as Glycine max). It is one of the most widely used vegetable\
+      \ oils and is beneficial due to its essential fatty acids, which contribute\
+      \ to overall health. It is also rich in plant sterols, which positively affect\
+      \ individual health, and contains a wealth of vitamins and minerals.\n     \
+      \         The health benefits of soybean oil include:\n\n              Cholesterol\
+      \ control: The high levels of fatty acids in soybean oil help regulate blood\
+      \ cholesterol levels and reduce the risk of diseases associated with high cholesterol,\
+      \ such as heart disease, strokes, and heart attacks. Fatty acids like palmitic\
+      \ acid and oleic acid are present in balanced quantities, helping to lower the\
+      \ risk of cardiovascular disease.\n              Alzheimer's disease: Soybean\
+      \ oil contains high levels of Vitamin K, which is linked to reducing Alzheimer's\
+      \ symptoms, acting as an antioxidant to protect nerve cells from damage.\n \
+      \             Bone health: Vitamin K in soybean oil stimulates bone growth and\
+      \ speeds up healing from injuries, and its calcium content helps reduce the\
+      \ risk of osteoporosis, especially in old age.\n              Skin and eye health:\
+      \ Omega-3 fatty acids in soybean oil protect cell membranes in delicate areas\
+      \ such as the eyes and skin, preventing bacteria and pollutants from entering.\
+      \ It also enhances vision by reducing free radicals, which contribute to macular\
+      \ degeneration and cataracts.\n              Improved appearance and overall\
+      \ health: The high Vitamin E content in soybean oil reduces acne and prevents\
+      \ sunburns. It also helps build new cells and reduces the risk of cancer, heart\
+      \ disease, and aging.\n                  \n                - note that today's\
+      \ date is {date_string} anything beyond add it as forcasting\n             \
+      \   "
+  Key Players:
+    bing_query: false
+    prompt: "\n        Generate the following section in [language]\n        ### Key\
+      \ Players\n            - Generate a list of the key companies involved in Egypt's\
+      \ oil industry in a table, divided into three categories:\n            ####\
+      \ Oil Extraction Companies (Private Sector):\n\n                الوطنية لاستخلاص\
+      \ الزيوت (Cargill)\n                الإسكندرية لاستخلاص الزيوت (AlexSeed)\n\
+      \                المجد لاستخلاص وتكرير الزيوت النباتية (Al Majd Group)\n   \
+      \             جولدن اويل (Golden Oil - Al Majd Group)\n                مجموعة\
+      \ الصفا (IGOS & AL SAFA OILEX)\n                الدولية لاستخلاص الزيوت (OILEX)\n\
+      \                ايفر جرين لعصر وتكرير الزيوت (Evergreen)\n\n            ####\
+      \ Oil Refining Companies (Private Sector):\n\n                شركة مصر الخليج\
+      \ لتصنيع الزيوت \"زيت اولين\"\n                شركة ارما للصناعات الغذائية\n\
+      \                الشركة العالمية للدهون \"فيكو\"\n                شركة سيلا\
+      \ للزيوت الغذائية\n                شركة صافولا مصر\n                الشركة المتحدة\
+      \ لتصنيع الزيوت \"شهد\"\n                شركة الصناعة والتجارة المصرية\n   \
+      \             شركة مصر الدولية للصناعات الغذائية\n                الشركة العربية\
+      \ لاستخلاص وتكرير الزيوت النباتية \"اريكو\"\n                شركة افكو مصر\n\
+      \                الشركة المصرية للزيوت الطبيعية\n\n            #### Oil Refining\
+      \ Companies (Public Sector):\n\n                شركة القاهرة للزيوت والصابون\n\
+      \                شركة مصر للزيوت والصابون\n                شركة النيل للزيوت\
+      \ والمنظفات\n                شركة الزيوت المستخلصة ومنتجاتها\n             \
+      \   شركة الاسكندرية للزيوت والصابون\n                شركة طنطا للزيوت والصابون\n\
+      \n        - Don't add any additional text.\n        - note that today's date\
+      \ is {date_string} anything beyond add it as forcasting\n        "
+    use_pdf: false
+  Key Players Updates:
+    bing_query: true
+    prompt: "\n        Generate the following section: in [language]\n        ####\
+      \ Key players updates\n        - Provide the latest updates and news for key\
+      \ companies involved in edible oil extraction and refining in Egypt.\n     \
+      \   - Cite the source.\n        - Don't add additional text.\n        - note\
+      \ that today's date is {date_string} anything beyond add it as forcasting\n\
+      \        "
+    use_pdf: false
+  Latest Updates:
+    bing_query: true
+    prompt: "\n        Generate the following section in [language]\n        ### Latest\
+      \ updates\n            - **Egypt**\n              - Provide Egypt's Consumption\
+      \ of edible oil.\n              - Examine the volume and key sources of sunflower\
+      \ and olive oil imports in {current_year}.\n              - Provide Egypt's\
+      \ self-sufficiency of edible oil.\n              - Discuss relevant government\
+      \ policies or initiatives aimed at boosting local production and reducing reliance\
+      \ on imports.\n              - Provide the current prices of \"consumer cooking\
+      \ oils\" in Egypt in a table.\n              - Discuss recent challenges caused\
+      \ by the global supply chain disruptions and the impact of population growth\
+      \ on demand for vegetable oils.\n\n            - **Worldwide**\n           \
+      \   - Discuss the latest global news in the oil extraction and refining industry,\
+      \ with a focus on the impact of geopolitical events like the Russia-Ukraine\
+      \ war, and their influence on global oil prices, supply chains, and the availability\
+      \ of raw materials.\n              - Highlight key global oil producers and\
+      \ their contributions to the market.\n              - Provide the most important\
+      \ oil-exporting countries to Egypt.\n              - Provide global edible oil\
+      \ production updates {current_year}.\n              - Provide global vegetable\
+      \ oil prices {current_year}.\n\n            - **citations**: Include credible\
+      \ sources for all data and statistics.\n            - All data should be the\
+      \ last updated {current_year}\n            - note that today's date is {date_string}\
+      \ anything beyond add it as forcasting\n            "
+    use_pdf: false
+  Market Research:
+    bing_query: false
+    prompt: "\n        Generate the following section in [language]\n        ### The\
+      \ market research department report of july at our bank on the industry\n  \
+      \          ,Financial Performance,Financial Position,Cash Flow Position,Key\
+      \ P&L Figures,Key B/S Figures,,,,,,,,,,,\n            1Q24 figures,EBITDA Margin,NPM,ROE,ROA,Current\
+      \ Ratio,Fin. Lev.,Debt /Equity,OCF (EGP Mn),FCF (EGP Mn),FCF/OCF,Revenue (EGP\
+      \ Mn),% 4 y-o-y,Net income (EGP Mn),% 4 y-o-y,Total assets (EGP Mn),Total liab.\
+      \ (EGP Mn)\n            Cairo Oils & Soap Co,11.80%,7.70%,26.60%,7.60%,0.95,2.35,67.60%,-82.69,-11,0.13,372.3,70%,28.82,34.40%,825.8,474.1\n\
+      \            Ajwa for Food Ind. (Q- end. 12-23),-9.30%,-14.00%,3.80%,1.30%,0.43,3.08,1.60%,33.45,32.63,0.98,400.4,-19%,-43.51,224%,\"\
+      3,937.20\",\"2,638.80\"\n            Extracted Oil and Derivatives Co,0.00%,0.30%,10.10%,0.80%,1.06,12.1,0.00%,-13.84,-14.47,1.05,948.8,-2%,2.86,-54.18%,\"\
+      3,087.60\",\"2,850.90\"\n            Ismailia Co for Food Industries,33.00%,39.90%,42.90%,24.30%,2,1.77,41.80%,12.23,11.98,0.98,80.08,102%,31.94,334.25%,249.1,119.6\n\
+      \            Misr Oils and Soap Co,-1.00%,-0.10%,0.50%,0.10%,1.19,3.89,0.00%,-18.68,-18.96,1.01,853.8,13%,-0.57,-231.29%,337,263.1\n\
+      \n            - generate the table columns as rows and rows as columns\n   \
+      \         - Extract all the data and table related to Agriculture & Forestry\
+      \ from the report. Present the companies as columns and the financial indicators\
+      \ as rows in the table for better clarity.\n            - Don't add conclusion.\n\
+      \            - note that today's date is {date_string} anything beyond add it\
+      \ as forcasting\n        "
+    use_pdf: false
+  Market Updates:
+    bing_query: false
+    prompt: "\n        Generate the following section in [language]\n        ### Market\
+      \ Updates\n            - Extract the sales data in a table for \"Oils and Fats,\
+      \ sales, EEGPmn\", and \"Oils and Fats, sales, EEGPmn, % groowth  y-o-y\" across\
+      \ multiple years, where years are the column headers.\n            - Cite the\
+      \ source.\n        - Don't add additional text.\n        - note that today's\
+      \ date is {date_string} anything beyond add it as forcasting\n        "
+  Swot Analysis & Conclusion:
+    bing_query: true
+    prompt: "\n        Generate the following section in [language]\n        ### SWOT\
+      \ Analysis\n            - Create a detailed table for SWOT analysis for the\
+      \ oil extraction and refining industry in Egypt, highlighting its strengths,\
+      \ weaknesses, opportunities, and threats.\n            - Be specific and accurate.\n\
+      \        ###Industry Characteristics Analysis:\n\n           - Create a table\
+      \ of the following elements:\n              Maturity: The industry is in a mature\
+      \ phase, characterized by moderate risk. It is closely linked to the food sector,\
+      \ with increasing demand for its products each year. The industry benefits from\
+      \ Egypt's competitive advantages, such as lower energy and labor costs, making\
+      \ it attractive to investors. The continuous population growth is expected to\
+      \ further drive demand.\n\n              Cost Structure: The industry exhibits\
+      \ low risk in terms of cost structure. It primarily consists of variable costs,\
+      \ which constitute the majority of total expenses. This allows for flexibility\
+      \ in adjusting to fluctuations in demand.\n\n              Cyclicality: Classified\
+      \ as non-cyclical, the industry carries a low risk concerning economic cycles.\
+      \ The demand for food is generally stable and not significantly affected by\
+      \ changes in economic conditions, although the prices of some raw materials\
+      \ may fluctuate due to economic cycles.\n\n              Dependence: There is\
+      \ a moderate risk associated with dependence. The sector relies on the availability\
+      \ of essential commodities, such as wheat and corn, sourced from both local\
+      \ markets and imports. As these goods are fundamental to daily life and are\
+      \ used in various food industries, like bread production, their demand remains\
+      \ consistently high. Additionally, government efforts to ensure affordable access\
+      \ to these products and accommodate population growth bolster their necessity.\n\
+      \n              Substitutes: The risk is low in terms of substitutes, as there\
+      \ are no alternatives to strategic goods, which are essential for everyday living.\n\
+      \n              Regulations: The regulatory environment poses moderate risk.\
+      \ The government actively supports the industry by launching projects to expand\
+      \ agricultural areas and boost the production of strategic goods. The industry\
+      \ is closely monitored to maintain market stability, meet consumption needs,\
+      \ and regulate prices, ensuring they remain accessible to consumers.\n\n   \
+      \           Profitability: Profitability carries a moderate risk. The industry\
+      \ is considered highly profitable because it significantly adds value by converting\
+      \ low-cost raw materials into high-value finished products.\n\n\n        ###\
+      \ Conclusion\n            - Provide a comprehensive analysis for oils ectraction\
+      \ and refining industry trends, highlighting whether each industry is growing\
+      \ or declining. Include relevant statistics and data to support your conclusions,\
+      \ tailored specifically for credit decision reviewers.\n        - note that\
+      \ today's date is {date_string} anything beyond add it as forcasting\n     \
+      \   "
+    use_pdf: false
+  pdf: Raw_data/Oil_Refining_And_Extraction/
+RealState:
   BM market research:
     bing_query: false
     prompt: "Generate the following sections in [language]: \n        Your output\
