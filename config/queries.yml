@@ -349,8 +349,8 @@ Food and beverage (retail):
   Market updates in Egypt:
   - current food and beverage wholesale/retail industry in Egypt
   - Investment in food and beverage wholesale/Retail sector in Egypt
-  - Comparison between wholesale/Retail industry investment in Egypt {int(current_year)
-    - 1} vs
+  - Comparison between wholesale/Retail industry investment in Egypt {current_year_m_1}
+    vs
   - Hyper markets in Egypt openings/offerings in
   - Name of New hypermarkets in Egypt
   Market updates in Egypt 2:
@@ -650,8 +650,7 @@ Textiles:
   - انتاج مصر من الغزل و النسيج
   - احصائيات صناعة الغزل والنسيج في مصر
   - https://cnnbusinessarabic.com/retail/74555/%D8%A8%D9%86%D8%B5%D9%81-%D9%85%D9%84%D9%8A%D8%A7%D8%B1-%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D8%B4%D8%B1%D9%83%D8%A9-%D8%B5%D9%8A%D9%86%D9%8A%D8%A9-%D8%AA%D8%A8%D8%AD%D8%AB-%D8%A5%D9%86%D8%B4%D8%A7%D8%A1-%D9%85%D8%AC%D9%85%D8%B9-%D9%84%D9%84%D8%BA%D8%B2%D9%84-%D9%81%D9%8A-%D9%85%D8%B5%D8%B1
-  - https://gate.ahram.org.eg/News/4696329.aspx#:~:text=%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF-,%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D8%A9:%202.4%20%D9%85%D9%84%D9%8A%D8%A7%D8%B1%20%D8%AF%D9%88%D9%84%D8%A7%D8%B1%20%D8%B5%D8%A7%D8%AF%D8%B1%D8%A7%D8%AA%20%D9%85%D8%B5%D8%B1,%D8%A7%D9%84%D9%85%D9%84%D8%A7%D8%A8%D8%B3%20%D8%A7%D9%84%D8%AC%D8%A7%D9%87%D8%B2%D8%A9%20%D8%AE%D9%84%D8%A7%D9%84%20{int(current_year)
-    - 1}%20%7C%20%D9%81%D9%8A%D8%AF%D9%8A%D9%88&text=%D9%83%D8%B4%D9%81%20%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D8%B5%D8%AF%D8%B1%20%D8%B9%D9%86%20%D8%A7%D9%84%D9%87%D9%8A%D8%A6%D8%A9,2%20%D9%85%D9%84%D9%8A%D8%A7%D8%B1%20%D9%88433%20%D9%85%D9%84%D9%8A%D9%88%D9%86%20%D8%AF%D9%88%D9%84%D8%A7%D8%B1.
+  - https://gate.ahram.org.eg/News/4696329.aspx#:~:text=%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF-,%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D8%A9:%202.4%20%D9%85%D9%84%D9%8A%D8%A7%D8%B1%20%D8%AF%D9%88%D9%84%D8%A7%D8%B1%20%D8%B5%D8%A7%D8%AF%D8%B1%D8%A7%D8%AA%20%D9%85%D8%B5%D8%B1,%D8%A7%D9%84%D9%85%D9%84%D8%A7%D8%A8%D8%B3%20%D8%A7%D9%84%D8%AC%D8%A7%D9%87%D8%B2%D8%A9%20%D8%AE%D9%84%D8%A7%D9%84%20{current_year_m_1}%20%7C%20%D9%81%D9%8A%D8%AF%D9%8A%D9%88&text=%D9%83%D8%B4%D9%81%20%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D8%B5%D8%AF%D8%B1%20%D8%B9%D9%86%20%D8%A7%D9%84%D9%87%D9%8A%D8%A6%D8%A9,2%20%D9%85%D9%84%D9%8A%D8%A7%D8%B1%20%D9%88433%20%D9%85%D9%84%D9%8A%D9%88%D9%86%20%D8%AF%D9%88%D9%84%D8%A7%D8%B1.
   - https://www.youm7.com/story/2024/7/11/12-%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A9-%D8%AD%D9%88%D9%84-%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D9%85%D8%B5%D8%A7%D9%86%D8%B9-%D8%A7%D9%84%D8%BA%D8%B2%D9%84-%D9%88%D8%A7%D9%84%D9%86%D8%B3%D9%8A%D8%AC-%D8%A8%D8%AA%D9%83%D9%84%D9%81%D8%A9-50-%D9%85%D9%84%D9%8A%D8%A7%D8%B1/6634787
   - https://www.almasryalyoum.com/news/details/3235166
   Regulatory framework & Antidumping laws:

@@ -41,7 +41,7 @@ def get_industries_data(
 
 
 
-def get_industries_name(
+def get_industries_names(
         industries_names_path='config\\industryName.txt'
         ):
     
@@ -64,16 +64,39 @@ def process_prompt(openai_service, bing, vector_store, selected_language, prompt
     date_string = today.strftime("%d-%B-%Y")
 
     # Current year
-    current_year = today.strftime("%Y")
+    current_year = int(today.strftime("%Y"))
+    # - note that today's date is {date_string} anything beyond add it as forcasting
     
     print(f"\n---------------------\nProcessing {prompt_key}\n---------------------\n")
     prompt = prompt_data["prompt"]
+    try:
+         prompt = prompt.format(
+             current_year=current_year,
+             date_string=date_string,
+             current_year_p_1=current_year+1,
+             current_year_p_2=current_year+2,
+             current_year_p_3=current_year+3,
+             current_year_p_4=current_year+4,
+             current_year_p_5=current_year+5,
+             
+             current_year_m_1=current_year-1,
+             current_year_m_2=current_year-2,
+             current_year_m_3=current_year-3,
+             current_year_m_4=current_year-4,
+             current_year_m_5=current_year-5,
+        )
+        
+
+    except Exception as e:
+        print("____________________________________________________________________")
+        print(e)
+        print("____________________________________________________________________")
+    
     # Replace the [language] placeholder with the selected language
     prompt = prompt.replace("[language]", selected_language)
-    prompt = prompt.replace("[date_string]", date_string)
-    prompt = prompt.replace("[current_year]", current_year)
-    prompt = prompt.replace("[current_year]", current_year)
- 
+    
+    #run the F string function to replace all dynamic variables
+
     bing_query_list = prompt_data.get("bing_query", None)
     bing_results = []
  
@@ -118,16 +141,17 @@ def load_embeddings(industry_name):
 
 def create_industry_analysis(language:str,
                             industry_name:str,
-                            industries_names_path='config\\industryName.txt',
-                            industries_queries_path='config\\queries.yml',
-                            industries_prompts_path='config\\prompts.yml'
+                            industries_names_path='config/industryName.txt',
+                            industries_queries_path='config/queries.yml',
+                            industries_prompts_path='config/prompts.yml'
                             ):
+    
     
     # read industries data
     industries_names ,industries_prompts, industries_queries=get_industries_data(    
-                                        industries_names_path='config\\industryName.txt',
-                                        industries_queries_path='config\\queries.yml',
-                                        industries_prompts_path='config\\prompts.yml'
+                                        industries_names_path='config/industryName.txt',
+                                        industries_queries_path='config/queries.yml',
+                                        industries_prompts_path='config/prompts.yml'
                                         )
 
     # Record the start time
@@ -186,3 +210,4 @@ def create_industry_analysis(language:str,
  
     # Convert the time to minutes
     total_time_taken_minutes = total_time_taken / 60
+    return filename

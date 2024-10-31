@@ -14,7 +14,7 @@ IT_prompts = {
             -Mention their types as well.
             -Make it in one paragraph not more than 5 lines.
             -Don't include any conclusions.
-            - note that today's date is [date_string] anything beyond add it as forcasting
+            - note that today's date is {date_string} anything beyond add it as forcasting
             """,
             "bing_query": None,
         },
@@ -280,7 +280,7 @@ IT_prompts = {
                 The table should focus on providing a complete competitive overview
             Instructions:
                 -Add numbers that represent the current situation for each section  if existing and be sure these numbers extracted for the context
-                -Provide updated data after {int(current_year) - 1} or at least from {int(current_year) - 1}; no need for data before this period.
+                -Provide updated data after {current_year_m_1} or at least from {current_year_m_1}; no need for data before this period.
                 -Cite sources for every section and table by name  .
                 -Ensure the table is formatted to be clear, readable, and easy to understand.
                 -Do not add a conclusion.
@@ -475,7 +475,7 @@ oil_gas_prompts = {
  
             3.Hydrocracking Project for Mazut at Assiut National Petroleum Manufacturing Company (ANOPC):
 
-                -The investment cost is around 2.9 billion USD, with plans to complete the project by December {int(current_year) + 1}.
+                -The investment cost is around 2.9 billion USD, with plans to complete the project by December {current_year_p_1}.
 
                 -The project aims to establish a hydrocracking complex with a feed capacity of 2.5 million tons/year of mazut to produce 1.6 million tons/year of diesel, 100,000 tons/year of butane, 400,000 tons/year of naphtha, 330,000 tons/year of coke, and 65,000 tons/year of sulfur.
 
@@ -872,12 +872,12 @@ real_estate_prompts = {
         - Discuss the significance of the real estate sector to the economy, including its role in economic growth, job creation, and infrastructure development.
         - Highlight the diversity and importance of the real estate sector, considering various sub-sectors like residential, commercial, and industrial properties, as well as urbanization trends.
 
-        ### Real Estate Market Statistics {int(current_year) - 14} - {current_year}:
+        ### Real Estate Market Statistics {current_year_m_14} - {current_year}:
         - Provide a detailed analytical statement on the growth of real estate investments, total housing units constructed, and total property transactions.
         - Include a table with the following columns: Year, Total Investments (in billion dollars), Number of Housing Units (in thousands), and Total Property Transactions.
         - Add accurate sources.
 
-        ### Real Estate Sector Performance {int(current_year) - 2} - {current_year}:
+        ### Real Estate Sector Performance {current_year_m_2} - {current_year}:
         - Discuss key growth drivers, including rising urbanization rates, foreign direct investments (FDI), and major real estate projects by prominent developers. Be specific.
         - Highlight key governmental policies, regulatory updates, and initiatives to promote affordable housing and real estate development. Be specific.
         - Include significant updates from the Ministry of Housing, or related authorities. Be specific.
@@ -897,7 +897,7 @@ real_estate_prompts = {
         
         Generate the following section:
 
-        ### Market Updates and Latest News in Egypt {int(current_year) - 2} - {current_year}:
+        ### Market Updates and Latest News in Egypt {current_year_m_2} - {current_year}:
         - Provide the latest news and statistical data from reliable sources concerning the real estate industry, focusing on:
           - Egypt: Highlight recent developments, trends, and statistical insights impacting the real estate sector, including residential, commercial, and infrastructure updates.
           - The impact of the increase in refugees in Egypt on the real estate sector.
@@ -918,7 +918,7 @@ real_estate_prompts = {
         "prompt": """Generate the following sections in [language]: 
         Your output will be for a risk manager working in credit approvals in the banking sector. Provide information about the real estate industry to help with credit decisions.
 
-        ### Market Updates and Latest News Globally {int(current_year) - 2} - {current_year}:
+        ### Market Updates and Latest News Globally {current_year_m_2} - {current_year}:
         - Provide the latest news and statistical data from reliable sources concerning the real estate industry, focusing on:
           - Global: Highlight recent developments, trends, and statistical insights impacting the real estate sector, including residential, commercial, and infrastructure updates.
         - Add the source names (no links).
@@ -981,7 +981,7 @@ real_estate_prompts = {
           - Sales Promotions & Offers.
           - Future Expansion Plans.
 
-        - Provide updated data for {int(current_year) - 1} or later.
+        - Provide updated data for {current_year_m_1} or later.
         - Add sources (names only, no links).
         - note that today's date is {date_string} anything beyond add it as forcasting
         
@@ -1091,11 +1091,11 @@ AUTOMOTIVE_prompts= {
       "prompt": """Generate the following sections in [language]:
     ### Automotive Types:
     - Provide detailed information on various types of vehicles, including electric vehicles and traditional combustion engines, highlighting their market performance and sales.
-    - Include a comparison table for the Total Market Split for YTD {int(current_year) - 1} vs. YTD {int(current_year) - 2}.
+    - Include a comparison table for the Total Market Split for YTD {current_year_m_1} vs. YTD {current_year_m_2}.
     - Focus on the automotive industry in Egypt, covering the following categories:
-      - **Passenger Cars**: Market Split YTD {current_year} vs. YTD {int(current_year) - 1}
-      - **Buses, Mini Buses, and Microbuses**: Market Split YTD {current_year} vs. YTD {int(current_year) - 1}
-      - **Trucks and Commercial Vehicles**: Market Split YTD {current_year} vs. YTD {int(current_year) - 1}
+      - **Passenger Cars**: Market Split YTD {current_year} vs. YTD {current_year_m_1}
+      - **Buses, Mini Buses, and Microbuses**: Market Split YTD {current_year} vs. YTD {current_year_m_1}
+      - **Trucks and Commercial Vehicles**: Market Split YTD {current_year} vs. YTD {current_year_m_1}
     - Provide production, sales statistics, and latest updates for each vehicle type in the Egyptian market. Present these in a table format with values and specific dates, where applicable.
     - note that today's date is {date_string} anything beyond add it as forcasting
     """,
@@ -1135,21 +1135,21 @@ AUTOMOTIVE_prompts= {
             -Generate a table presenting and comparing sales performance across brands (top 5), ensuring accuracy without any extrapolation or predictions.
 
         3-PC Market Sales Analysis: 
-            -Present a detailed PC Market Split April {current_year} April {int(current_year) - 1} in volume Include the monthly sales volume and any relevant data points from relevant charts, graphs or any viualize insights and tables.
-            -Present a detailed PC Market Split YTD {current_year} YTD  {int(current_year) - 1} in volume
+            -Present a detailed PC Market Split April {current_year} April {current_year_m_1} in volume Include the monthly sales volume and any relevant data points from relevant charts, graphs or any viualize insights and tables.
+            -Present a detailed PC Market Split YTD {current_year} YTD  {current_year_m_1} in volume
             -Present a detailed PC Market April {current_year} Sales Analysis in volume, Include the monthly sales volume and any relevant data points from relevant charts, graphs or any viualize insights and tables.
 
         4-PC Market YTD by Brand Origin: 
-            -Extract and present a year-to-date comparison of sales by PC Market YTD {current_year} - {int(current_year) - 1} By Brand Origin by pulling the data directly from any relevant charts, graphs or any viualize insights..
+            -Extract and present a year-to-date comparison of sales by PC Market YTD {current_year} - {current_year_m_1} By Brand Origin by pulling the data directly from any relevant charts, graphs or any viualize insights..
 
         5-Buses Market Sales Analysis: 
-            -Extract and present the Buses Market Sales analysis in volume for April {current_year} and December {int(current_year) - 1} in table format by pulling the data directly from any relevant charts, graphs or any viualize insights.
+            -Extract and present the Buses Market Sales analysis in volume for April {current_year} and December {current_year_m_1} in table format by pulling the data directly from any relevant charts, graphs or any viualize insights.
             -Extract and present the Buses Market Sales April  {current_year} Analysis in volume in table format by pulling the data directly from any relevant charts, graphs or any viualize insights.
-            -Extract and present the Buses Market Split April {current_year} April {int(current_year) - 1}
-            -Buses Market Split YTD {current_year} - YTD {int(current_year) - 1}
+            -Extract and present the Buses Market Split April {current_year} April {current_year_m_1}
+            -Buses Market Split YTD {current_year} - YTD {current_year_m_1}
         6-Trucks Market Split: 
-            -Present the Trucks Market Split April {current_year} – April {int(current_year) - 1} in table format by pulling the data directly from any relevant charts, graphs or any viualize insights.
-            -Present the  Trucks Market Split YTD {current_year} – YTD {int(current_year) - 1} in table format by pulling the data directly from any relevant charts, graphs or any viualize insights.
+            -Present the Trucks Market Split April {current_year} – April {current_year_m_1} in table format by pulling the data directly from any relevant charts, graphs or any viualize insights.
+            -Present the  Trucks Market Split YTD {current_year} – YTD {current_year_m_1} in table format by pulling the data directly from any relevant charts, graphs or any viualize insights.
             -Present the sales analysis for the Trucks Market April {current_year} Sales Analysis in volume, in table format by pulling the data directly from any relevant charts, graphs or any viualize insights.
 
         -Instructions:
@@ -1170,32 +1170,32 @@ AUTOMOTIVE_prompts= {
         -Generate a comprehensive analysis that includes the following data points:
         1.Total Market by Brand:
           Extract and present the following in a table format by pulling the data directly from any relevant charts, graphs or any viualize insights:
-            -Total Market by Brand April {current_year} - April {int(current_year) - 1}– in Volume.
-            -Total Market by Brand April {current_year} - April {int(current_year) - 1} –in Market Share.
+            -Total Market by Brand April {current_year} - April {current_year_m_1}– in Volume.
+            -Total Market by Brand April {current_year} - April {current_year_m_1} –in Market Share.
             
         2.PC Market by Brand:
            -Extract and present the following in a table format by pulling the data directly from any relevant charts, graphs or any viualize insights:
                 -PC Market April {current_year} Sales Analysis in volume.
-                -PC Market by Brand April {current_year} April {int(current_year) - 1} in volume
-                -PC Market by Brand April {current_year} – April {int(current_year) - 1} in Market Share 
+                -PC Market by Brand April {current_year} April {current_year_m_1} in volume
+                -PC Market by Brand April {current_year} – April {current_year_m_1} in Market Share 
         3.PC CKD by Brand:
           -Extract and present the following in a table format by pulling the data directly from any relevant charts, graphs or any viualize insights:
-            -CPC CKD By Brand April {current_year} April {int(current_year) - 1} in Volume.
-            -PC CKD By Brand April {current_year} April {int(current_year) - 1} in Market Share.
+            -CPC CKD By Brand April {current_year} April {current_year_m_1} in Volume.
+            -PC CKD By Brand April {current_year} April {current_year_m_1} in Market Share.
             
         4.PC CBU by Brand:
-            -Present the PC CBU By Brand April {current_year} April {int(current_year) - 1} in Volume in table format by pulling data and values from any relevant charts, graphs or any viualize insights
-            -Present the PC CBU By Brand April {current_year} April {int(current_year) - 1} in Market Share by pulling data and values from any relevant charts, graphs or any viualize insights.
+            -Present the PC CBU By Brand April {current_year} April {current_year_m_1} in Volume in table format by pulling data and values from any relevant charts, graphs or any viualize insights
+            -Present the PC CBU By Brand April {current_year} April {current_year_m_1} in Market Share by pulling data and values from any relevant charts, graphs or any viualize insights.
             
         5.Buses Market by Brand:
           -Extract and present the following in a table format by pulling the data directly from any relevant charts, graphs or any viualize insights:
-            - Provide a Buses Market By Brand April {current_year} –April {int(current_year) - 1} in volume.
-            - provide a Buses Market By Brand April {current_year} – April {int(current_year) - 1} in market share.
+            - Provide a Buses Market By Brand April {current_year} –April {current_year_m_1} in volume.
+            - provide a Buses Market By Brand April {current_year} – April {current_year_m_1} in market share.
            
         6.Trucks Market by Brand:
           -Extract and present the following in a table format by pulling the data directly from any relevant charts, graphs or any viualize insights:        
-            - Include the Trucks Market By Brand April {current_year} April {int(current_year) - 1} in Volume
-            - Trucks Market By Brand April {current_year} – April {int(current_year) - 1} in Market Share.
+            - Include the Trucks Market By Brand April {current_year} April {current_year_m_1} in Volume
+            - Trucks Market By Brand April {current_year} – April {current_year_m_1} in Market Share.
         [instruction]
     - Data Extraction: Accurately extract all data and values from charts, graphs, or any visualized insights and present them in a table format.
     - Ensure to extract all relevant data directly from the visualizations, leaving no values empty or missing.
@@ -1511,8 +1511,8 @@ construction_prompts = {
         - Highlight the key view for industry expectations and the forecasted scenario.
         - Mention the latest expected developments for the industry.
         
-        #### Forecasting for Construction Industry during {int(current_year) - 1} till 2033:
-            - Construction And Infrastructure Industry Data (Egypt {int(current_year) - 1}-2033).
+        #### Forecasting for Construction Industry during {current_year_m_1} till 2033:
+            - Construction And Infrastructure Industry Data (Egypt {current_year_m_1}-2033).
             - Indicators:
             - Construction industry value, EGPbn
             - Construction industry value, real growth, % y-o-y
@@ -1647,9 +1647,9 @@ tourism_prompts = {
         "prompt": """
         Generate the following sections in [language]:  
 
-        ### Tourist Statistics in Egypt {int(current_year) - 3}-{current_year}):
+        ### Tourist Statistics in Egypt {current_year_m_3}-{current_year}):
            - Provide a detailed analytical statement of the Total arrivals, '000",
-            visiting Egypt and the "International tourism receipts, USDbn" from {int(current_year) - 3} to {current_year}. Include a table with the following columns: Year, Number of Tourists (in millions), and Tourism Revenue (in billion dollars).
+            visiting Egypt and the "International tourism receipts, USDbn" from {current_year_m_3} to {current_year}. Include a table with the following columns: Year, Number of Tourists (in millions), and Tourism Revenue (in billion dollars).
            - Add the sources and the domain name not the whole url like this [domain-name.top-level-domain].
 
         Instructions: 
@@ -1666,13 +1666,13 @@ tourism_prompts = {
         "prompt": """
         Generate the following sections in [language]: 
 
-        ### Tourism Sector Performance in Egypt ({int(current_year) -2} - {current_year}):
+        ### Tourism Sector Performance in Egypt ({current_year_m_2} - {current_year}):
             - Discuss key growth drivers, including the increase in hotel occupancy rates and investments by leading global hotel groups, Be specific.
             - Highlight major developments and governmental efforts to re-evaluate and enhance hotel standards, Be specific.
             - Include significant updates from the Ministry of Tourism, Be specific.
             - Add the sources and the domain name not the whole url like this [domain-name.top-level-domain].
 
-        ### Future Outlook in Egypt {int(current_year) + 1} - {int(current_year) + 4}:
+        ### Future Outlook in Egypt {current_year_p_1} - {current_year_p_4}:
            - Provide projections for the tourism sector, considering factors such as the impact of the Russia-Ukraine war, expected growth in tourist numbers, and anticipated revenue.
            - Include a table with projections for the number of tourists and tourism revenue for each year.
            - Add the sources and the domain name not the whole url like this [domain-name.top-level-domain].
@@ -1692,7 +1692,7 @@ tourism_prompts = {
         Generate the following sections in [language]: 
 
         ### Expectations of the tourism sector in Egypt during the coming period and the impact of any global conflict on the sector:
-           - Create a table for Hotel Accommodation (Egypt {int(current_year) - 3} - {int(current_year) + 4}
+           - Create a table for Hotel Accommodation (Egypt {current_year_m_3} - {current_year_p_4}
              - Indicators: "Accommodation & food service nominal GVA, EGPbn", "Accommodation & food service EGP nominal GVA growth, % y-o-y"
                "Number of hotels and establishments,'000", "Total overnight stays, '000", "Average length of stay, nights",
                "Hotel rooms, '000", "Occupancy rate, % ".
@@ -1716,7 +1716,7 @@ tourism_prompts = {
         "prompt": """
         Generate the following sections in [language]: 
 
-        ### Market Updates and Latest News {int(current_year) - 1}-{current_year}
+        ### Market Updates and Latest News {current_year_m_1}-{current_year}
             - Provide the latest news and statistical data from reliable sources concerning the tourism industry, focusing on:
               - Egypt: Highlight recent developments, trends, and statistical insights impacting the tourism sector.
               - Global Trends: Discuss overarching global trends influencing tourism worldwide, backed by credible statistics and analyses.
@@ -1935,7 +1935,7 @@ Electricity_prompts = {
     "Market updates in Egypt" : 
         {"prompt": """Generate in [language] the following sections: 
         
-        ### Market Updates and Latest News {int(current_year) - 1}-{current_year}
+        ### Market Updates and Latest News {current_year_m_1}-{current_year}
 
         #### Domestic Updates and Latest News
                 - Provide the latest news and statistical data from reliable sources concerning the electricity industry, focusing on:
@@ -2128,7 +2128,7 @@ steel_prompts = {
     "Market Updates": {
         "prompt": """
         Generate the following section: in [language]
-        ### Market Updates in Egypt {int(current_year) - 1}-{current_year}
+        ### Market Updates in Egypt {current_year_m_1}-{current_year}
             - Create a table for market updates for Steel, including production volumes, exports, and steel consumption.
               - You can provide projected figures for current or upcoming years, noting that they are estimates. However, it's important to include actual numbers whenever possible. If the year is still ongoing, it's preferable to give data up to the most recent available date.
             - **Comment**: Discuss the possible reasons for the increase or decrease in numbers, considering economic conditions and relevant factors within the country. Ensure to be accurate.
@@ -2349,7 +2349,7 @@ food_Retail_prompts={
             "bing_query":["current food and beverage wholesale/retail industry in Egypt",
                         
                         "Investment in food and beverage wholesale/Retail sector in Egypt",
-                        "Comparison between wholesale/Retail industry investment in Egypt {int(current_year) - 1} vs",
+                        "Comparison between wholesale/Retail industry investment in Egypt {current_year_m_1} vs",
                         "Hyper markets in Egypt openings/offerings in",
                         "Name of New hypermarkets in Egypt"],
             
@@ -2655,7 +2655,7 @@ sugar_prompts = {
         
         ### Sugar Industry Statstics in {current_year}
                 - Table For
-                    ### Sugar Sales Egypt {int(current_year) - 3}- {int(current_year) + 4}
+                    ### Sugar Sales Egypt {current_year_m_3}- {current_year_p_4}
                         - Sugar and sugar products, sales, EGPmn, % growth yo-y
                         - Sugar and sugar products, sales, EGPmn
 
@@ -2674,7 +2674,7 @@ sugar_prompts = {
 
                 - Table For
 
-                    #### Sugar Production And Consumption Egypt {int(current_year) - 5} - {int(current_year) + 4}
+                    #### Sugar Production And Consumption Egypt {current_year_m_5} - {current_year_p_4}
                         - Sugar production, '000 tonnes
                         - Sugar production, % y-o-y
                         - Sugar consumption, '000 tonnes
@@ -2700,7 +2700,7 @@ sugar_prompts = {
                             Integrated Industries targets a 50% increase in beet sugar production
                             Salah Omar: Payment of one billion pounds, the value of 450 thousand tons received in {current_year}
                             Integrated Industries targets a 50% increase in beet sugar production from one of the sugar factories
-                            The Sugar and Integrated Industries Company aims to produce about 110,000 tons of sugar from beets during the new {int(current_year) + 1} season, an increase of 50% over the {current_year} season, which witnessed the production of 56,000 tons, according to Engineer Salah Omar, the technical managing director of the company.
+                            The Sugar and Integrated Industries Company aims to produce about 110,000 tons of sugar from beets during the new {current_year_p_1} season, an increase of 50% over the {current_year} season, which witnessed the production of 56,000 tons, according to Engineer Salah Omar, the technical managing director of the company.
                             Omar added in statements to Hapi newspaper that the company aims to receive 700 to 800 thousand tons of beets from farmers in the governorates of Beni Suef, Minya, Assiut, Sohag, and Qena, for the benefit of the Abu Qurqas factory, during the new supply season.
                             He pointed out that the company received during the {current_year} beet harvest season a quantity amounting to 450 thousand tons, and about one billion pounds were paid for the value of the quantities supplied.
                             Omar explained that these quantities did not achieve the target estimated at about 600 thousand tons, out of the total cultivated area, which amounted to 22 thousand acres.
@@ -2708,7 +2708,7 @@ sugar_prompts = {
                             The Technical Managing Director of the Sugar Company indicated that the quantities of beets grown in Upper Egypt are directed to the Abu Qurqas Factory “government” and the Canal Sugar Company Factory “private sector,” noting that the Abu Qurqas Factory received about 430 thousand tons of beets during the {current_year} season, It is less than the target by about 150 thousand tons, as a result of climate change.
                             It is noteworthy that Egypt produces about 2.7 million sugar, of which the sugar company’s share is 700 thousand tons and the rest is from beet companies. The consumption rate is about 3 million tons of sugar, and 300 thousand tons are imported to fill the gap between production and consumption.                    
                     ### Amount Egypt's imports of sugar
-                            A report by the US Department of Agriculture expects Egypt's sugar production to decline during the new {current_year}-{int(current_year) + 1} season to record 2.86 million tons, down 110.2 thousand tons compared to the ministry's previous expectations due to the decline in sugarcane production.
+                            A report by the US Department of Agriculture expects Egypt's sugar production to decline during the new {current_year}-{current_year_p_1} season to record 2.86 million tons, down 110.2 thousand tons compared to the ministry's previous expectations due to the decline in sugarcane production.
                             A recent report by the US Department of Agriculture said that last year witnessed a decline in global sugar production, as sugar prices rose and the pound recorded a new decline, which limited the possibility of Egypt importing sugar.
                             During the past year, Egypt suffered a crisis of a sharp rise in free sugar prices, with the price of a kilo reaching 50 pounds ($1.02), before it declined again and became available in the markets at lower prices.
                             Inflation in Egypt hit record levels last year, reaching 38 percent in September, before declining again.
@@ -2716,13 +2716,13 @@ sugar_prompts = {
                             Although Egypt has expanded its sugar beet and cane cultivation, its production is not enough for its consumption and it is imported from abroad.
 
                             Sugar consumption in Egypt increases
-                            The report expects Egypt's sugar consumption to increase during the new season {current_year}/{int(current_year) + 1} to reach 4.1 million tons compared to 3.9 million tons in the previous season, due to population growth and increased demand for sugar.
+                            The report expects Egypt's sugar consumption to increase during the new season {current_year}/{current_year_p_1} to reach 4.1 million tons compared to 3.9 million tons in the previous season, due to population growth and increased demand for sugar.
                             Egypt is one of the highest sugar consuming countries in the world. According to the Organization for Economic Co-operation and Development, the individual in Egypt consumes 51.4 kilograms of sugar annually, which is nearly double the global average consumption per person.
                             Sugar is sold in Egypt at the free price and the subsidized price, and those with a support card can obtain subsidized sugar.
-                            The report expects Egypt's imports in the new season {current_year}-{int(current_year) + 1} to reach 1.65 million tons, an increase of 551 thousand tons over the previous season {int(current_year) - 1}-{current_year}, to cover the shortage in local production and the increase in demand.
+                            The report expects Egypt's imports in the new season {current_year}-{current_year_p_1} to reach 1.65 million tons, an increase of 551 thousand tons over the previous season {current_year_m_1}-{current_year}, to cover the shortage in local production and the increase in demand.
                             Egypt primarily imports raw sugar cane from Brazil and raw sugar beets from the European Union.
-                            Market fluctuations in the fiscal year {int(current_year) - 1}-{current_year} led the General Authority for Supply Commodities to purchase raw and refined sugar cane from Saudi Arabia.
-                            Egypt's sugar stock is estimated to end the new season {current_year}-{int(current_year) + 1} at nearly 1.1 million tons, an increase of 1.03 million tons over the stock estimates in the {int(current_year) - 1}-{current_year} season, with Egypt establishing a strategic reserve to protect against future shocks.
+                            Market fluctuations in the fiscal year {current_year_m_1}-{current_year} led the General Authority for Supply Commodities to purchase raw and refined sugar cane from Saudi Arabia.
+                            Egypt's sugar stock is estimated to end the new season {current_year}-{current_year_p_1} at nearly 1.1 million tons, an increase of 1.03 million tons over the stock estimates in the {current_year_m_1}-{current_year} season, with Egypt establishing a strategic reserve to protect against future shocks.
                             Last March, the Egyptian Cabinet announced that Egypt intends to import one million tons of white sugar during the current the current year to confront rising prices and scarce supply.
                             The Ministry of Supply and Internal Trade, represented by the General Authority for Supply Commodities, contracted last April to purchase 200,000 tons of imported raw sugar, bringing the total contracted at the time to 450,000 tons of raw sugar.              
                     ### Amount Egypt's exports of sugar
@@ -2749,7 +2749,7 @@ sugar_prompts = {
 
     "Market updates in Egypt": {"prompt": """Generate the following sections in [language]: 
         
-        ### Market Updates and Latest News {int(current_year) - 1}-{current_year}
+        ### Market Updates and Latest News {current_year_m_1}-{current_year}
 
         #### Domestic Updates and Latest News
                 - Provide the latest news and statistical data from reliable sources concerning the Sugar industry, focusing on:
@@ -2816,7 +2816,7 @@ sugar_prompts = {
         ### The most important points mentioned in our bank’s market management report on the industry, July {current_year}
         - write the following analysis as it is
             1. Sugar Price Index (FAO)
-                - In {int(current_year) - 1}, the Sugar Price Index increased by 27%.
+                - In {current_year_m_1}, the Sugar Price Index increased by 27%.
                 - In {current_year} (YTD), the Sugar Price Index decreased by 10%.
                 
             2. Delta Sugar Company (Financial Performance and Position)
@@ -2867,7 +2867,7 @@ sugar_prompts = {
 
                 ### Conclusion:
                 - Provide a comprehensive conclusion on industry trends (growing or not) for credit decision reviewers with showing some statistics and make it a bit longer.
-                - Any predictions should till {int(current_year) + 1}
+                - Any predictions should till {current_year_p_1}
 
                 Instructions: 
                     - the table items shouldn't be empty should if empty write hyphen -
@@ -3080,7 +3080,7 @@ cotton_prompts = {
 
         - Highlight the diversity and importance of the cotton industry, considering various sub-sectors like agricultural production, textile manufacturing, and retail, as well as urbanization trends.
 
-        ### Cotton Industry Market Statistics {int(current_year) - 14} - {current_year}:
+        ### Cotton Industry Market Statistics {current_year_m_14} - {current_year}:
         - Provide a detailed analytical statement on the growth of cotton industry investments, total cotton production (in tons), and total cotton product transactions
 
         - Include a table with the following columns:
@@ -3090,7 +3090,7 @@ cotton_prompts = {
             - Total Cotton Product Transactions (in units)
         - Add the accurate source for the data presented in the analysis.
 
-        ### Cotton Industry Performance {int(current_year) - 2} - {current_year}:
+        ### Cotton Industry Performance {current_year_m_2} - {current_year}:
         - Discuss key growth drivers, including rising demand for cotton products, foreign direct investments (FDI) in cotton manufacturing, and major cotton production initiatives by prominent producers. Be specific.
 
         - Highlight key governmental policies, regulatory updates, and initiatives to promote sustainable cotton farming and industry development. Be specific.
@@ -3126,24 +3126,24 @@ cotton_prompts = {
 
     "Market Updates In Egypt": {
             "prompt": """Generate the following sections in [language]:
-        ### Market Updates and Latest News in Egypt {int(current_year) - 1} - {current_year}
+        ### Market Updates and Latest News in Egypt {current_year_m_1} - {current_year}
             Provide the latest news and statistical data from reliable sources concerning the cotton industry, focusing on:
-            - Cultivated Area by Governorate: Provide a table showing the cultivated areas in all governorates in Egypt for the {int(current_year) - 1} - {current_year} season compared to the same period from the previous season. The table should include:
+            - Cultivated Area by Governorate: Provide a table showing the cultivated areas in all governorates in Egypt for the {current_year_m_1} - {current_year} season compared to the same period from the previous season. The table should include:
                 - Governorate names in [language]:
         الإسكندرية النوبارية البحيرة كفر الشيخ الغربية الشرقية بورسعيد الإسماعيلية الدقهلية دمياط المنوفية القليوبية (بنها) اجمالي وجه بحري الفيوم بني سويف المنيا أسيوط الوادي الجديد سوهاج اجمالي وجه قبلي الإجمالي العام
 
-                Cultivated Area {int(current_year) - 1}/{current_year}
-                Cultivated Area {int(current_year) - 2}/{int(current_year) - 1}
-                Cultivated Area {current_year}/{int(current_year) + 1}
+                Cultivated Area {current_year_m_1}/{current_year}
+                Cultivated Area {current_year_m_2}/{current_year_m_1}
+                Cultivated Area {current_year}/{current_year_p_1}
                 Change 
                 Percentage Change 
                 add them in the table  give me source if the table 
 
-            - Cotton Status for the {int(current_year) - 2}/{int(current_year) - 1} Season: Provide data on the cultivated area and comparative figures from previous seasons, along with the percentage change.
-            - Cotton Status for the {int(current_year) - 1} /{current_year} Season: Provide data on the cultivated area up to a specific date, with the percentage change compared to the previous season.
-            - Cotton Status for the {current_year}/{int(current_year) + 1} Season: Data on the cultivated area compared to the previous season.
-            - Cultivated Area by Governorate: Provide a table showing the cultivated areas in each governorate for the {int(current_year) - 1}/{current_year} season compared to the same period from the previous season.
-            - Export Activity: Provide details on the quantity of cotton distributed during the {int(current_year) - 1}-{current_year} season and the export percentages.
+            - Cotton Status for the {current_year_m_2}/{current_year_m_1} Season: Provide data on the cultivated area and comparative figures from previous seasons, along with the percentage change.
+            - Cotton Status for the {current_year_m_1} /{current_year} Season: Provide data on the cultivated area up to a specific date, with the percentage change compared to the previous season.
+            - Cotton Status for the {current_year}/{current_year_p_1} Season: Data on the cultivated area compared to the previous season.
+            - Cultivated Area by Governorate: Provide a table showing the cultivated areas in each governorate for the {current_year_m_1}/{current_year} season compared to the same period from the previous season.
+            - Export Activity: Provide details on the quantity of cotton distributed during the {current_year_m_1}-{current_year} season and the export percentages.
             - Egyptian Cotton Export Connections: Provide data on exports to different countries and their respective percentages.
             - Export volume of new and old crops for each company.
             - Shipment percentage of new and old crops relative to the total sector commitments.
@@ -3180,7 +3180,7 @@ cotton_prompts = {
             "prompt": """
         Generate the following sections in [language]:
 
-        ### Market Updates and Latest News Globally {int(current_year) - 1}-{current_year} 
+        ### Market Updates and Latest News Globally {current_year_m_1}-{current_year} 
         - Provide the latest news and statistical data from reliable sources concerning the cotton industry, focusing on:
             - The world: Highlight recent developments, trends, and statistical insights impacting the cotton sector, including production, trade, pricing, and sustainability updates.
         - Add the sources names, not links.
@@ -3207,28 +3207,28 @@ cotton_prompts = {
         - What is the current state of cotton production in Egypt with numbers?
         - Identify major players in the market and their contributions to cotton supply with numbers.
         - Discuss any government initiatives or regulations that affect cotton production.
-        - The data should be updated after {int(current_year) - 1} at least.
+        - The data should be updated after {current_year_m_1} at least.
         - Add source for your response.
         ### Exports:
         - Examine the role of the cotton sector in Egypt's export economy.
         - What types of cotton products are being exported, and to which countries?
         - Assess the impact of foreign investment in the Egyptian cotton market.
         - Add numbers and tables that represent this section.
-        - The data should be updated after {int(current_year) - 1} at least.
+        - The data should be updated after {current_year_m_1} at least.
         - Add source for your response.
         ### Imports:
         - Identify key imports related to cotton with numbers.
         - How do import trends affect the cotton market in Egypt?
         - Discuss any challenges or barriers related to imports in the cotton sector.
-        - The news should be {int(current_year) - 1} and after that.
-        - No need for historical data before {int(current_year) - 1}.
+        - The news should be {current_year_m_1} and after that.
+        - No need for historical data before {current_year_m_1}.
         Instructions:
             - Add the sources' names, not links, for every table and section please.  
             - The answer should be in [language].
             - The output must be customized for cotton only.
             - Cite sources for every section and table by name and link should include the links.
             - The information should be extracted from Egyptian sources only, don't include info from AUS for example.
-            - The data should be updated after {int(current_year) - 1} at least.
+            - The data should be updated after {current_year_m_1} at least.
             - note that today's date is {date_string} anything beyond add it as forcasting
                 """,
                 "bing_query": [
@@ -3264,7 +3264,7 @@ cotton_prompts = {
         The table should focus on providing a complete competitive overview:
         Instructions:
             - Add numbers that represent the current situation for each section and be sure this number extracted for the context. 
-            - Provide updated data after {int(current_year) - 1} or at least from {int(current_year) - 1}; no need for data before this period.
+            - Provide updated data after {current_year_m_1} or at least from {current_year_m_1}; no need for data before this period.
             - Cite sources for every section and table by name.
             - Ensure the table is formatted to be clear, readable, and easy to understand.
             - Do not add a conclusion.
@@ -3399,7 +3399,7 @@ fruits_and_vegetables_prompts = {
 
             ## Fruits and vegetables statstics
                 - table for
-                    Fruits and vegetables Sales Egypt {int(current_year) - 3}-{int(current_year) + 4}
+                    Fruits and vegetables Sales Egypt {current_year_m_3}-{current_year_p_4}
                         Fresh and preserved fruit, sales, EGPmn
                         Fresh and preserved fruit, sales, EGPmn, % growth y-o-y
                         Fresh vegetables, sales, EGPmn
@@ -4167,10 +4167,10 @@ meat_prompts = {
         ### Industry Overview:
         
         
-        ### Meat ,  Frozen Meat  and frozen fish Industry History & Market Statistics {int(current_year) - 14} - {current_year}:
+        ### Meat ,  Frozen Meat  and frozen fish Industry History & Market Statistics {current_year_m_14} - {current_year}:
         
         
-        ### Meat ,   Frozen Meat  frozen and  fish Industry Performance {int(current_year) - 2} - {current_year}:
+        ### Meat ,   Frozen Meat  frozen and  fish Industry Performance {current_year_m_2} - {current_year}:
         
         
         ### Importance of the Meat , Frozen Meat and frozen fish Industry in Egypt:
@@ -4233,12 +4233,12 @@ meat_prompts = {
             - Provide the latest news and statistical data from reliable sources concerning the **meat and frozen meat industry**, focusing on:
             - **Global Market**: Highlight recent developments, trends, and statistical insights impacting the global **meat and frozen meat sector**, including production, consumption, imports, exports, and key market drivers.
             - Add the sources' names, not links.
-            - The response should include information after {int(current_year) - 1}.
+            - The response should include information after {current_year_m_1}.
             - Do **not** add a conclusion.
             - Ensure the output is related to **meat , frozen meat and frozen fish  only** (exclude poultry).
             - the response should be related  frozen meat  ,  meat  market and frozen fish Do not include anything else in your response like (chicken and frozen chicken)
             - don't include in your response any information related to chicken , frozen chicken and chicken companies
-            -the response should be updated after {int(current_year) - 1}
+            -the response should be updated after {current_year_m_1}
             - note that today's date is {date_string} anything beyond add it as forcasting
         
                     """,
@@ -4288,8 +4288,8 @@ meat_prompts = {
             - Don't include in your response any information related to chicken, frozen meat, frozen fish, or chicken companies.
             - Generate a table that represents this part if applicable.
             - Include numbers that represent the current situation.
-            - The response should be updated after {int(current_year) - 1}.
-            - No need for data before {int(current_year) - 1}.
+            - The response should be updated after {current_year_m_1}.
+            - No need for data before {current_year_m_1}.
             - Don't include a conclusion in your response.
             - If you don't have enough info about any item, don't include it in the table.
             - note that today's date is {date_string} anything beyond add it as forcasting
@@ -4321,7 +4321,7 @@ meat_prompts = {
         3. Table Format: The table should be large and clear, suitable for inclusion in a formal document.
         4. Sources: Cite the data sources by name without including direct links.
         5. Language: The table and instructions should be in **[language]**.
-        6. Timeframe: Focus on data post-{int(current_year) - 1} or as recent as possible. Avoid data from before {int(current_year) - 1}.
+        6. Timeframe: Focus on data post-{current_year_m_1} or as recent as possible. Avoid data from before {current_year_m_1}.
         7-the response should be related  frozen meat  ,  meat  market and frozen fish Do not include anything else in your response like (chicken and frozen chicken)
         8-don't include in your response any information related to chicken , frozen chicken and chicken companies
         9-don't add conclusion or introduction in your response
@@ -4457,8 +4457,8 @@ dairy_cheese_prompts = {
                 ### Market Updates and News (Locally in Egypt and Globally)
                 -provide the latest market updates and news regarding the dairy, cheese and butter industry in Egypt. Focus on:
                     -discuss the Latest Updates And Industry Developments in detail.
-                    -provide the Latest prices for dairies and cheeses products (such as milk, cheeses, yughart and butter) during {current_year} compared to {int(current_year) - 1}, visualize it in A table formate to be readable.
-                    -Production volume and production capacity trends through {current_year}, compared to {int(current_year) - 1}, visualize it in A table formate to be readable.
+                    -provide the Latest prices for dairies and cheeses products (such as milk, cheeses, yughart and butter) during {current_year} compared to {current_year_m_1}, visualize it in A table formate to be readable.
+                    -Production volume and production capacity trends through {current_year}, compared to {current_year_m_1}, visualize it in A table formate to be readable.
                     -Any major investments, government initiatives, or industry developments in the local in egyption's dairy market.
                     
                 [Instructions]:
@@ -4488,7 +4488,7 @@ dairy_cheese_prompts = {
         'Dairies sales in Egypt':{
                 "prompt" : """
                 Generate the following sections in [language] language then format them according to the required structure in the [Instructions]:
-                #### dairies sales in Egypt till {int(current_year) + 4}:
+                #### dairies sales in Egypt till {current_year_p_4}:
                 - Present the information in the following table format:
                 
                 | Indicator                 | 2021       | 2022       | 2023      | 2024      | 2025       | 2026       | 2027       | 2028       |
@@ -4546,8 +4546,8 @@ dairy_cheese_prompts = {
             ### Market updates in World wide the current year:
                 Generate a comprehensive overview of worldwide market updates for the dairy industry the current year. Structure the response with detailed subsections as follows:
 
-                1. Market Updates in {int(current_year) - 1}-{current_year}:
-                - Provide a summary of the latest global market trends in the dairy industry for the years {int(current_year) - 1} and {current_year}.
+                1. Market Updates in {current_year_m_1}-{current_year}:
+                - Provide a summary of the latest global market trends in the dairy industry for the years {current_year_m_1} and {current_year}.
                 - Focus on milk, cheese, and yogurt production, consumption, and pricing.
 
                 2. Dairy Industry News {current_year}:
@@ -4670,7 +4670,7 @@ dairy_cheese_prompts = {
                 "prompt" : """
                 Generate the following sections in [language] language then format them according to the required structure in the [Instructions]:
             Industry Forecast:
-                -provide the Structural Trends of dairy and cheese Spending Outlook For {current_year} & {int(current_year) + 1}.
+                -provide the Structural Trends of dairy and cheese Spending Outlook For {current_year} & {current_year_p_1}.
                 -HIGHLIGHT  any statistical trends and key view of Structural Trends of dairy and cheese 
             ### Economic Conditions:
                 -Detailed Discussion: Provide an in-depth discussion of Egypt's current economic conditions impacting the construction sector, including:
@@ -4775,7 +4775,7 @@ textiles_prompts = {
         "prompt" : """Generate the following in [language]:
         ### Market Updates and Latest News in Egypt related to textiles industry in {current_year} 
             - add paragraph for every unique news in the context
-            - and add to the previous news these articles: (**With half a billion dollars.. Jiangsu Lianfa Textile Co. Ltd. seeks to establish a spinning complex in Egypt**),(**Industry: $2.4 billion in Egyptian ready-made garment exports in {int(current_year) - 1}**),(**12 facts about developing spinning and weaving factories at a cost of 50 billion pounds** "create this one as a paragraph not as points")
+            - and add to the previous news these articles: (**With half a billion dollars.. Jiangsu Lianfa Textile Co. Ltd. seeks to establish a spinning complex in Egypt**),(**Industry: $2.4 billion in Egyptian ready-made garment exports in {current_year_m_1}**),(**12 facts about developing spinning and weaving factories at a cost of 50 billion pounds** "create this one as a paragraph not as points")
         ### Sources
             - Add the sources as a domain name not the whole url like this [domain-name.top-level-domain].
 
@@ -4794,7 +4794,7 @@ textiles_prompts = {
         "انتاج مصر من الغزل و النسيج",
         "احصائيات صناعة الغزل والنسيج في مصر",
         "https://cnnbusinessarabic.com/retail/74555/%D8%A8%D9%86%D8%B5%D9%81-%D9%85%D9%84%D9%8A%D8%A7%D8%B1-%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D8%B4%D8%B1%D9%83%D8%A9-%D8%B5%D9%8A%D9%86%D9%8A%D8%A9-%D8%AA%D8%A8%D8%AD%D8%AB-%D8%A5%D9%86%D8%B4%D8%A7%D8%A1-%D9%85%D8%AC%D9%85%D8%B9-%D9%84%D9%84%D8%BA%D8%B2%D9%84-%D9%81%D9%8A-%D9%85%D8%B5%D8%B1",
-        "https://gate.ahram.org.eg/News/4696329.aspx#:~:text=%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF-,%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D8%A9:%202.4%20%D9%85%D9%84%D9%8A%D8%A7%D8%B1%20%D8%AF%D9%88%D9%84%D8%A7%D8%B1%20%D8%B5%D8%A7%D8%AF%D8%B1%D8%A7%D8%AA%20%D9%85%D8%B5%D8%B1,%D8%A7%D9%84%D9%85%D9%84%D8%A7%D8%A8%D8%B3%20%D8%A7%D9%84%D8%AC%D8%A7%D9%87%D8%B2%D8%A9%20%D8%AE%D9%84%D8%A7%D9%84%20{int(current_year) - 1}%20%7C%20%D9%81%D9%8A%D8%AF%D9%8A%D9%88&text=%D9%83%D8%B4%D9%81%20%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D8%B5%D8%AF%D8%B1%20%D8%B9%D9%86%20%D8%A7%D9%84%D9%87%D9%8A%D8%A6%D8%A9,2%20%D9%85%D9%84%D9%8A%D8%A7%D8%B1%20%D9%88433%20%D9%85%D9%84%D9%8A%D9%88%D9%86%20%D8%AF%D9%88%D9%84%D8%A7%D8%B1.",
+        "https://gate.ahram.org.eg/News/4696329.aspx#:~:text=%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF-,%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D8%A9:%202.4%20%D9%85%D9%84%D9%8A%D8%A7%D8%B1%20%D8%AF%D9%88%D9%84%D8%A7%D8%B1%20%D8%B5%D8%A7%D8%AF%D8%B1%D8%A7%D8%AA%20%D9%85%D8%B5%D8%B1,%D8%A7%D9%84%D9%85%D9%84%D8%A7%D8%A8%D8%B3%20%D8%A7%D9%84%D8%AC%D8%A7%D9%87%D8%B2%D8%A9%20%D8%AE%D9%84%D8%A7%D9%84%20{current_year_m_1}%20%7C%20%D9%81%D9%8A%D8%AF%D9%8A%D9%88&text=%D9%83%D8%B4%D9%81%20%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D8%B5%D8%AF%D8%B1%20%D8%B9%D9%86%20%D8%A7%D9%84%D9%87%D9%8A%D8%A6%D8%A9,2%20%D9%85%D9%84%D9%8A%D8%A7%D8%B1%20%D9%88433%20%D9%85%D9%84%D9%8A%D9%88%D9%86%20%D8%AF%D9%88%D9%84%D8%A7%D8%B1.",
         "https://www.youm7.com/story/2024/7/11/12-%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A9-%D8%AD%D9%88%D9%84-%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D9%85%D8%B5%D8%A7%D9%86%D8%B9-%D8%A7%D9%84%D8%BA%D8%B2%D9%84-%D9%88%D8%A7%D9%84%D9%86%D8%B3%D9%8A%D8%AC-%D8%A8%D8%AA%D9%83%D9%84%D9%81%D8%A9-50-%D9%85%D9%84%D9%8A%D8%A7%D8%B1/6634787",
         "https://www.almasryalyoum.com/news/details/3235166"
         ]
